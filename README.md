@@ -7,6 +7,8 @@ Editor estático de fichas de RPG, inspirado no layout do playtest de Ordem Para
 - Seis modelos iniciais e criação de agentes em branco.
 - Atributos, perícias e suas especialidades, PV/PD, habilidades, rituais e inventário.
 - Blocos arrastáveis e redimensionáveis, camadas, alinhamento, cores, texto, imagens e marcadores.
+- Seleção múltipla por Shift/Ctrl/clique, botões de seleção nas camadas ou área de seleção no fundo.
+- Alinhamento por seis bordas/centros com um bloco de referência fixo, movimentação e redimensionamento em conjunto e distribuição de espaços para três ou mais blocos.
 - Modelos de composição; blocos livres são preservados ao trocar o modelo.
 - Ordem e visibilidade de linhas de perícia personalizáveis.
 - Desfazer/refazer, travas de posição, modo de visualização e acompanhamento de recursos.

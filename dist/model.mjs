@@ -48,6 +48,9 @@ export function checks(d){return [
  {ok:JSON.stringify(Object.values(d.attrs).sort((a,b)=>a-b))==='[6,8,10]',text:'Atributos: um d6, um d8 e um d10'},
  {ok:d.pv+d.pd===48,text:`${d.pv+d.pd} de 48 pontos em PV + PD`}
  ];}
+export function boundsOf(blocks){if(!blocks.length)return null;const x=Math.min(...blocks.map(b=>b.x)),y=Math.min(...blocks.map(b=>b.y));return {x,y,w:Math.max(...blocks.map(b=>b.x+b.w))-x,h:Math.max(...blocks.map(b=>b.y+b.h))-y};}
+export function alignToReference(blocks,ids,referenceId,kind){const set=new Set(ids),ref=blocks.find(b=>b.id===referenceId&&set.has(b.id));if(!ref)return;for(const b of blocks){if(!set.has(b.id)||b.id===ref.id||b.locked)continue;switch(kind){case 'left':b.x=ref.x;break;case 'hcenter':b.x=ref.x+(ref.w-b.w)/2;break;case 'right':b.x=ref.x+ref.w-b.w;break;case 'top':b.y=ref.y;break;case 'vcenter':b.y=ref.y+(ref.h-b.h)/2;break;case 'bottom':b.y=ref.y+ref.h-b.h;break;}}}
+export function distributeBlocks(blocks,ids,axis){const set=new Set(ids),pos=axis==='x'?'x':'y',size=axis==='x'?'w':'h',items=blocks.filter(b=>set.has(b.id));if(items.length<3||items.some(b=>b.locked))return;items.sort((a,b)=>a[pos]-b[pos]);const first=items[0],last=items.at(-1),total=items.reduce((n,b)=>n+b[size],0),gap=(last[pos]+last[size]-first[pos]-total)/(items.length-1);let cursor=first[pos]+first[size]+gap;for(let i=1;i<items.length-1;i++){items[i][pos]=cursor;cursor+=items[i][size]+gap;}}
 export function validateImport(raw){
  if(!raw||raw.schema!=='catastrophe-sheet'||raw.version!==1)throw new Error('Este arquivo não é uma ficha compatível com o editor.');
  if(typeof raw.name!=='string'||!Array.isArray(raw.blocks)||raw.blocks.length>150||!Array.isArray(raw.abilities)||!Array.isArray(raw.rituals))throw new Error('A ficha contém dados inválidos.');
