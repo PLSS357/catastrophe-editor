@@ -28,3 +28,8 @@ As fichas alteradas ficam no navegador usado, sem sincronização entre disposit
 ## Referências
 
 O tema visual reproduz a composição geral, cores por perfil, molduras e dados geométricos dos exemplos fornecidos. As regras são as adaptações caseiras desta conversa e não uma ferramenta oficial de Ordem Paranormal. Os textos de rituais contêm as versões reduzidas, não os valores originais do livro.
+
+## Grupos e partes editáveis
+
+Selecione vários elementos e use Agrupar (Ctrl+G). Desagrupar (Ctrl+Shift+G) separa grupos e, nos blocos originais, separa título e conteúdo; repetir no conteúdo de Atributos ou Perícias separa suas linhas. Dois cliques permitem selecionar um elemento dentro de um grupo. Grupos ficam salvos e mantêm a composição interna ao alinhar. O botão Começar ficha nova cria outra ficha sem substituir a atual. Os quadrados de preparação são brancos, com marca escura quando preenchidos.
+
