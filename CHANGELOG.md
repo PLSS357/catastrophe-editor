@@ -1,5 +1,15 @@
 # Alterações — 0.3.2
 
+## 0.4.1 — Menus compactos e navegação estável
+
+- Menu de imagem com Máscara, Virar, Organizar, Alinhar e Estilo em submenus; abertura por clique, ponteiro ou teclado, com posicionamento dentro da janela.
+- Zoom deixa de acompanhar automaticamente mudanças da área disponível. Seleção e abertura/recolhimento de painéis preservam a escala e o ponto central visualizado.
+- Modo de foco com uma única barra essencial. Ajustar página/largura considera padding, altura e espaço dos controles; a mudança de modo preserva o zoom.
+- Modelos nativos e personalizados mostram miniaturas renderizadas da composição. Camadas e grupos também usam prévias reais, com IDs SVG isolados.
+- Botões da barra central padronizados; títulos internos redundantes removidos das seções recolhíveis, mantendo contadores e dados auxiliares.
+- Validação: 73 testes automatizados e 33 fluxos de interface, incluindo enquadramento em janela de 884 px.
+
+
 ## 0.4.0 — Ateliê, páginas e exportação de grupo
 
 - Ações de arquivo reunidas no cabeçalho, ferramentas de composição próximas à ficha, modo de foco e enquadramentos de página/largura/seleção.

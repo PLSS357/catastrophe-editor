@@ -83,3 +83,13 @@ O PDF vetorial usa jsPDF 4.2.1 e svg2pdf.js 2.9.0 em um bundle local de aproxima
 **Versões, conferência e exportação.** Versões mostra miniatura, nome, data e resumo do que mudou. Conferir separa conteúdo, regras e diagramação; os botões abrem a página e selecionam o bloco relacionado. Exportar oferece Enviar como imagem, Imprimir em A4 e Continuar editando em outro dispositivo. PDF inclui todas as páginas; PNG/SVG com múltiplas páginas são reunidos em ZIP. Exportar grupo seleciona fichas para imagens individuais em ZIP ou um PDF conjunto (até 80 páginas por lote). Arquivos do lote recebem prefixos para evitar colisões de nomes. A prévia econômica tem fundo claro, sem textura, texto escuro e marcadores com contorno; a opção de exportação econômica é independente da aparência salva.
 
 O armazenamento continua local, sem login ou sincronização automática. Exportações grandes podem consumir memória e demorar. PDF vetorial conserva as limitações de fontes e efeitos descritas acima. Nenhuma ficha é enviada a um serviço externo para renderizar.
+
+## Navegação e menus — 0.4.1
+
+Selecionar elementos ou abrir propriedades preserva o zoom e o ponto central da área visualizada. Redimensionar a janela também mantém a escala; use Ajustar página, Ajustar largura ou Focar seleção quando quiser um novo enquadramento. A abertura de uma ficha ainda calcula um enquadramento inicial. Nos limites da área de rolagem, a posição é limitada ao espaço disponível.
+
+O modo de foco tem uma única barra com desfazer/refazer, seletor de página, enquadramentos e saída do foco. Entrar ou sair dele não altera a escala. Ajustar página considera largura, altura, padding e espaço dos controles, incluindo páginas altas. Ajustar largura preserva espaço para a barra de rolagem; com zoom manual maior ainda é possível navegar horizontalmente.
+
+O botão direito abre um menu compacto: máscaras em **Máscara**, espelhamento em **Virar**, camadas e bloqueio em **Organizar**, alinhamento/distribuição em **Alinhar** e aparência em **Estilo**. Submenus abrem ao apontar ou clicar. Setas verticais navegam, seta para a direita abre o submenu e seta para a esquerda retorna. Esc fecha primeiro o submenu, depois o menu. Telas muito baixas ainda podem precisar de rolagem para manter todas as ações acessíveis.
+
+Modelos nativos e personalizados exibem miniaturas geradas da composição com os dados do personagem atual, sem aplicar mudanças. Camadas exibem a aparência real dos blocos; grupos mostram o conjunto. As prévias têm referências SVG isoladas e não interferem na seleção ou na renderização da ficha. Títulos de seções não se repetem internamente; informações como d4 → d12, PV + PD e contadores permanecem disponíveis.
