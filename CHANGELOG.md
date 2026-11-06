@@ -1,3 +1,12 @@
+# Alterações — 0.3.1
+
+- Biblioteca de 109 entradas e 274 formas de rituais, extraídas das entradas mecânicas dos dez PDFs fornecidos, com resumos e referências de página.
+- Busca por nome ou efeito e filtros por elemento, círculo, fonte e forma; seleção de elemento em rituais multielemento.
+- Preservadas as onze conversões já usadas nos modelos. Novas entradas distinguem referência em PE de proposta de custo em PD, sem alegar conversão balanceada.
+- Dados de origem e forma acompanham a ficha no JSON, com desfazer/refazer da inclusão e edição normal.
+- Sem publicação de PDFs, enredo ou marcas d'água. Fontes incompletas e divergentes ficam identificadas.
+- Nove testes adicionais de catálogo e dois fluxos de interface para busca, seleção de forma, inclusão e preservação dos custos existentes.
+
 # Alterações — 0.3.0
 
 ## Etapa 1 — Fundação técnica

@@ -1,0 +1,5572 @@
+{
+  "version": 1,
+  "updated": "2026-11-06",
+  "scope": "104 descrições de rituais e 5 entradas adicionais de fichas de ameaças; formas e referências repetidas reunidas por nome.",
+  "sources": [
+    {
+      "id": "00",
+      "title": "Ordem Paranormal 1.2 .pdf",
+      "pageCount": 330,
+      "entries": 82,
+      "newEntries": 82,
+      "scope": "Rituais nomeados com descrição mecânica; menções narrativas e enredo não incluídos."
+    },
+    {
+      "id": "01",
+      "title": "OP - Sobrevivendo ao Horror 1.2.pdf",
+      "pageCount": 226,
+      "entries": 16,
+      "newEntries": 16,
+      "scope": "Rituais nomeados com descrição mecânica; menções narrativas e enredo não incluídos."
+    },
+    {
+      "id": "02",
+      "title": "Arquivos-Secretos-01.pdf",
+      "pageCount": 74,
+      "entries": 11,
+      "newEntries": 1,
+      "scope": "Rituais nomeados com descrição mecânica; menções narrativas e enredo não incluídos."
+    },
+    {
+      "id": "03",
+      "title": "Arquivos-Secretos-02.pdf",
+      "pageCount": 108,
+      "entries": 15,
+      "newEntries": 5,
+      "scope": "Rituais nomeados com descrição mecânica; menções narrativas e enredo não incluídos."
+    },
+    {
+      "id": "04",
+      "title": "Arquivos-Secretos.03.pdf",
+      "pageCount": 142,
+      "entries": 10,
+      "newEntries": 2,
+      "scope": "Rituais nomeados com descrição mecânica; menções narrativas e enredo não incluídos."
+    },
+    {
+      "id": "05",
+      "title": "Arquivos Secretos Panacea atualizado.pdf",
+      "pageCount": 82,
+      "entries": 4,
+      "newEntries": 1,
+      "scope": "Rituais nomeados com descrição mecânica; menções narrativas e enredo não incluídos."
+    },
+    {
+      "id": "06",
+      "title": "OP - Vendeta Oculta.pdf",
+      "pageCount": 147,
+      "entries": 0,
+      "newEntries": 0,
+      "scope": "Rituais nomeados com descrição mecânica; menções narrativas e enredo não incluídos."
+    },
+    {
+      "id": "07",
+      "title": "Arquivos.Secretos.Vampiros.pdf",
+      "pageCount": 93,
+      "entries": 1,
+      "newEntries": 1,
+      "scope": "Rituais nomeados com descrição mecânica; menções narrativas e enredo não incluídos."
+    },
+    {
+      "id": "08",
+      "title": "Arquivos-Secretos.SDOL-v1.0.pdf",
+      "pageCount": 70,
+      "entries": 4,
+      "newEntries": 0,
+      "scope": "Rituais nomeados com descrição mecânica; menções narrativas e enredo não incluídos."
+    },
+    {
+      "id": "09",
+      "title": "4rqu1v05 53cr3t05.pdf",
+      "pageCount": 79,
+      "entries": 8,
+      "newEntries": 1,
+      "scope": "Rituais nomeados com descrição mecânica; menções narrativas e enredo não incluídos."
+    }
+  ],
+  "rituals": [
+    {
+      "id": "alterar-destino",
+      "title": "Alterar Destino",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 4,
+      "summary": "Escolhe uma possibilidade favorável do futuro imediato para proteger o conjurador de uma ameaça.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Escolhe uma possibilidade favorável do futuro imediato para proteger o conjurador de uma ameaça.",
+          "costPE": 10
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [],
+          "referenceSummary": "Alcance: “curto” e o alvo para “um aliado à sua escolha”",
+          "costPE": 15
+        }
+      ],
+      "original": {
+        "execution": "reação",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "instantânea"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 132,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "alterar-memoria",
+      "title": "Alterar Memória",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 3,
+      "summary": "Apaga ou modifica lembranças recentes de uma pessoa; não permite reconstruir livremente toda a vida do alvo.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Apaga ou modifica lembranças recentes de uma pessoa; não permite reconstruir livremente toda a vida do alvo.",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 4,
+          "requirements": [
+            "4º círculo"
+          ],
+          "referenceSummary": "você pode alterar ou apagar memórias de até 24 horas atrás",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 pessoa",
+        "duration": "instantânea",
+        "resistance": "Vontade anula"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 132,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "amaldicoar-arma",
+      "title": "Amaldiçoar Arma",
+      "elements": [
+        "CONHECIMENTO",
+        "ENERGIA",
+        "MORTE",
+        "SANGUE"
+      ],
+      "circle": 1,
+      "summary": "Infunde uma arma ou munição com um elemento paranormal para acrescentar dano daquele elemento.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Infunde uma arma ou munição com um elemento paranormal para acrescentar dano daquele elemento.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [
+            "2º círculo"
+          ],
+          "referenceSummary": "muda o bônus de dano para +2d6",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo e afinidade"
+          ],
+          "referenceSummary": "muda o bônus de dano para +4d6",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 arma corpo a corpo ou pacote de munição",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 132,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "03",
+          "title": "Arquivos-Secretos-02.pdf",
+          "pdfPage": 82,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "amaldicoar-tecnologia",
+      "title": "Amaldiçoar Tecnologia",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 1,
+      "summary": "Faz um equipamento tecnológico operar acima de seus limites e adquirir melhorias temporárias.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Faz um equipamento tecnológico operar acima de seus limites e adquirir melhorias temporárias.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [
+            "2º círculo"
+          ],
+          "referenceSummary": "muda para duas modificações",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo e afinidade"
+          ],
+          "referenceSummary": "muda para três modificações",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 acessório ou arma de",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 132,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "09",
+          "title": "4rqu1v05 53cr3t05.pdf",
+          "pdfPage": 55,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "ancora-temporal",
+      "title": "Âncora Temporal",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 3,
+      "summary": "Vincula o alvo a uma posição, dificultando seu deslocamento enquanto ele tenta romper o efeito.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Vincula o alvo a uma posição, dificultando seu deslocamento enquanto ele tenta romper o efeito.",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 4,
+          "requirements": [
+            "4º círculo"
+          ],
+          "referenceSummary": "Alvo: “seres a sua escolha”",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "1 ser",
+        "duration": "cena",
+        "resistance": "Vontade parcial"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 132,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "apagar-as-luzes",
+      "title": "Apagar as Luzes",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 1,
+      "summary": "Suprime fontes de iluminação ao redor e permite enxergar na escuridão criada.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Suprime fontes de iluminação ao redor e permite enxergar na escuridão criada.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [
+            "2º círculo"
+          ],
+          "referenceSummary": "Alcance: determinar fontes de luz afetadas para longo",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "como Discente, e além de você, até cinco outros seres dentro desse alcance recebem visão no escuro",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "instantânea"
+      },
+      "sources": [
+        {
+          "id": "01",
+          "title": "OP - Sobrevivendo ao Horror 1.2.pdf",
+          "pdfPage": 51,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "aprimorar-fisico",
+      "title": "Aprimorar Físico",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 2,
+      "summary": "Reforça temporariamente as capacidades físicas de um ser.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Reforça temporariamente as capacidades físicas de um ser.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "Bônus: +2",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "4º círculo e afinidade"
+          ],
+          "referenceSummary": "Bônus: +3",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 ser",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 133,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "04",
+          "title": "Arquivos-Secretos.03.pdf",
+          "pdfPage": 81,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "aprimorar-mente",
+      "title": "Aprimorar Mente",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 2,
+      "summary": "Amplia temporariamente capacidades intelectuais ou de presença, sem conceder recursos permanentes.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Amplia temporariamente capacidades intelectuais ou de presença, sem conceder recursos permanentes.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "Bônus: +2",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "4º círculo e afinidade"
+          ],
+          "referenceSummary": "Bônus: +3",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 ser",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 133,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "04",
+          "title": "Arquivos-Secretos.03.pdf",
+          "pdfPage": 81,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "arma-atroz",
+      "title": "Arma Atroz",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 1,
+      "summary": "Transforma uma arma corpo a corpo em instrumento sobrenatural de agressão e precisão.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Transforma uma arma corpo a corpo em instrumento sobrenatural de agressão e precisão.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [
+            "2º círculo"
+          ],
+          "referenceSummary": "Bônus: +5 em testes de ataque",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo e afinidade"
+          ],
+          "referenceSummary": "Bônus: +5 em testes de ataque e +2 na margem de ameaça e no multiplicador de crítico",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 arma corpo a corpo",
+        "duration": "sustentada"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 133,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "armadura-de-sangue",
+      "title": "Armadura de Sangue",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 1,
+      "summary": "Forma uma proteção orgânica ao redor do conjurador, com versões que também amortecem dano físico.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Forma uma proteção orgânica ao redor do conjurador, com versões que também amortecem dano físico.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "muda o efeito para “fornece +10 na Defesa e resistência a balístico, corte, impacto e perfuração 5”",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 9,
+          "requirements": [
+            "4º círculo e afinidade"
+          ],
+          "referenceSummary": "muda o efeito para “fornece +15 na Defesa e resistência a balístico, corte, impacto e perfuração 10”",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 133,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "02",
+          "title": "Arquivos-Secretos-01.pdf",
+          "pdfPage": 28,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 1
+        },
+        {
+          "id": "02",
+          "title": "Arquivos-Secretos-01.pdf",
+          "pdfPage": 29,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 1
+        },
+        {
+          "id": "02",
+          "title": "Arquivos-Secretos-01.pdf",
+          "pdfPage": 30,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "aurora-da-verdade",
+      "title": "Aurora da Verdade",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 2,
+      "summary": "Cria uma região luminosa que revela ocultação e dificulta mentiras, respeitando a resistência dos afetados.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Cria uma região luminosa que revela ocultação e dificulta mentiras, respeitando a resistência dos afetados.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "Alcance: médio e a área para esfera com 9m de raio e o conjurador não é mais afetado pelo efeito",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "4º círculo e afinidade"
+          ],
+          "referenceSummary": "como discente, mas Alcance: longo e a duração para cena.",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "area": "esfera com 3m de raio",
+        "duration": "sustentada",
+        "resistance": "Vontade parcial"
+      },
+      "sources": [
+        {
+          "id": "01",
+          "title": "OP - Sobrevivendo ao Horror 1.2.pdf",
+          "pdfPage": 54,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "05",
+          "title": "Arquivos Secretos Panacea atualizado.pdf",
+          "pdfPage": 37,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "backup",
+      "title": "Backup",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 2,
+      "summary": "Cria uma cópia-chamariz ligada ao conjurador, permitindo trocar de posição com ela; versões superiores ampliam a ligação sensorial.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Cria uma cópia-chamariz ligada ao conjurador, permitindo trocar de posição com ela; versões superiores ampliam a ligação sensorial.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [
+            "2º círculo"
+          ],
+          "referenceSummary": "Duração: permanente.",
+          "costPE": 5
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "Permite falar e disfarçar a aparência pelo chamariz; a troca de posição pode liberar explosões de Energia.",
+          "costPE": 8
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "veja texto",
+        "duration": "24 horas"
+      },
+      "sources": [
+        {
+          "id": "09",
+          "title": "4rqu1v05 53cr3t05.pdf",
+          "pdfPage": 68,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "canalizar-o-medo",
+      "title": "Canalizar o Medo",
+      "elements": [
+        "MEDO"
+      ],
+      "circle": 4,
+      "summary": "Transfere a possibilidade de conjurar um ritual conhecido para outra pessoa, comprometendo parte dos recursos do doador.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Transfere a possibilidade de conjurar um ritual conhecido para outra pessoa, comprometendo parte dos recursos do doador.",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 pessoa",
+        "duration": "permanen"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 133,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "capturar-momento",
+      "title": "Capturar Momento",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 2,
+      "summary": "Registra um instante em um símbolo de Morte; formas superiores permitem descarregá-lo como uma explosão entrópica.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Registra um instante em um símbolo de Morte; formas superiores permitem descarregá-lo como uma explosão entrópica.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "acrescenta ao efeito a opção de gastar uma ação padrão para fazer o símbolo explodir em energias entrópicas, que causam 4d8 pontos de dano de Morte em todos os seres captados por ele no momento da explosão (um teste de…",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "3º Círculo"
+          ],
+          "referenceSummary": "como discente, mas Dano: 8d8 pontos de dano de Morte",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "médio",
+        "target": "esfera de 18m de raio",
+        "duration": "cena",
+        "resistance": "descrição da fonte inconsistente"
+      },
+      "sources": [
+        {
+          "id": "03",
+          "title": "Arquivos-Secretos-02.pdf",
+          "pdfPage": 66,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "03",
+          "title": "Arquivos-Secretos-02.pdf",
+          "pdfPage": 63,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 2
+        }
+      ],
+      "notes": [
+        "A descrição corrida e a ficha divergem neste PDF; o resumo usa a função de registro descrita na ficha. Confira as duas referências antes de usar."
+      ]
+    },
+    {
+      "id": "capturar-o-coracao",
+      "title": "Capturar o Coração",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 4,
+      "summary": "Provoca uma ligação emocional obsessiva que leva a vítima a favorecer o conjurador enquanto tenta resistir.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Provoca uma ligação emocional obsessiva que leva a vítima a favorecer o conjurador enquanto tenta resistir.",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "1 pessoa",
+        "duration": "cena",
+        "resistance": "Vontade parcial"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 133,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "chamas-do-caos",
+      "title": "Chamas do Caos",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 2,
+      "summary": "Permite gerar, apagar, deslocar ou intensificar calor e fogo; aprimoramentos permitem projetar ataques de energia.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Permite gerar, apagar, deslocar ou intensificar calor e fogo; aprimoramentos permitem projetar ataques de energia.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "Duração: susten t ada e adiciona “Resistência: Reflexos re du z à metade” .",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "como discente, mas Dano: 8d6",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "veja texto",
+        "duration": "cena",
+        "resistance": "Reflexos re du z à metade” . Em"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 134,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "09",
+          "title": "4rqu1v05 53cr3t05.pdf",
+          "pdfPage": 56,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "cicatrizacao",
+      "title": "Cicatrização",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 1,
+      "summary": "Acelera a recuperação de ferimentos mediante envelhecimento do alvo.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Acelera a recuperação de ferimentos mediante envelhecimento do alvo.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [
+            "2º círculo"
+          ],
+          "referenceSummary": "aumenta a cura para 5d8+5 PV",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 9,
+          "requirements": [
+            "4º círculo e afinidade com Morte"
+          ],
+          "referenceSummary": "Alcance: “curto” , o alvo para “seres escolhidos” e aumenta a cura para 7d8+7 PV",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 ser",
+        "duration": "instantânea"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 134,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "03",
+          "title": "Arquivos-Secretos-02.pdf",
+          "pdfPage": 74,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 1
+        },
+        {
+          "id": "04",
+          "title": "Arquivos-Secretos.03.pdf",
+          "pdfPage": 11,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 1
+        },
+        {
+          "id": "04",
+          "title": "Arquivos-Secretos.03.pdf",
+          "pdfPage": 88,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "cineraria",
+      "title": "Cinerária",
+      "elements": [
+        "MEDO"
+      ],
+      "circle": 1,
+      "summary": "Cria uma névoa que fortalece manifestações paranormais dentro de sua área.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Cria uma névoa que fortalece manifestações paranormais dentro de sua área.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [],
+          "referenceSummary": "além do normal, rituais conjurados dentro da névoa custam –2 PE",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [],
+          "referenceSummary": "além do normal, rituais con - jurados dentro da névoa causam dano maximizado",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "area": "nuvem de 6m de raio",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 134,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "coincidencia-forcada",
+      "title": "Coincidência Forçada",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 1,
+      "summary": "Manipula probabilidades para favorecer os testes do alvo.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Manipula probabilidades para favorecer os testes do alvo.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [
+            "2º círculo"
+          ],
+          "referenceSummary": "Alvo: aliados à sua escolha",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo e afinidade"
+          ],
+          "referenceSummary": "Alvo: aliados à sua escolha e o bônus para +5",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "1 ser",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 134,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "09",
+          "title": "4rqu1v05 53cr3t05.pdf",
+          "pdfPage": 55,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 1
+        },
+        {
+          "id": "09",
+          "title": "4rqu1v05 53cr3t05.pdf",
+          "pdfPage": 57,
+          "kind": "Forma Verdadeiro em ficha de ameaça",
+          "form": "Verdadeiro",
+          "circle": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "compreensao-paranormal",
+      "title": "Compreensão Paranormal",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 1,
+      "summary": "Permite interpretar informações escritas ou faladas que normalmente seriam incompreensíveis.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Permite interpretar informações escritas ou faladas que normalmente seriam incompreensíveis.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [
+            "2º círculo"
+          ],
+          "referenceSummary": "Alcance: “curto” e o alvo para “alvos escolhidos” .",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "Alcance: “pessoal” e o alvo para “você” .",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 ser ou objeto",
+        "duration": "cena",
+        "resistance": "Vontade anula"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 134,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "conhecendo-o-medo",
+      "title": "Conhecendo o Medo",
+      "elements": [
+        "MEDO"
+      ],
+      "circle": 4,
+      "summary": "Expõe a mente de uma pessoa a uma experiência extrema do Medo, com consequências duradouras.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Expõe a mente de uma pessoa a uma experiência extrema do Medo, com consequências duradouras.",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 pessoa",
+        "duration": "instantânea",
+        "resistance": "Vontade parcial"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 135,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "consumir-manancial",
+      "title": "Consumir Manancial",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 1,
+      "summary": "Converte energia vital ambiental em uma reserva temporária de proteção para o conjurador.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Converte energia vital ambiental em uma reserva temporária de proteção para o conjurador.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [],
+          "referenceSummary": "muda os PV temporários recebidos para 6d6",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [],
+          "referenceSummary": "Alvo: “área: esfe ra com 6m de raio centrada em você” e a resistência para “Fortitude reduz à metade” .",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "instantânea"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 135,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "contato-paranormal",
+      "title": "Contato Paranormal",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 3,
+      "summary": "Estabelece contato com uma inteligência do Outro Lado para buscar auxílio ou orientação.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Estabelece contato com uma inteligência do Outro Lado para buscar auxílio ou orientação.",
+          "costPE": 6
+        },
+        {
+          "name": "Discente",
+          "extraPE": 4,
+          "requirements": [
+            "4º círculo"
+          ],
+          "referenceSummary": "muda os dados de auxílio para d8.",
+          "costPE": 10
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 9,
+          "requirements": [
+            "4º círculo e afinidade"
+          ],
+          "referenceSummary": "muda os dados de auxílio para d12.",
+          "costPE": 15
+        }
+      ],
+      "original": {
+        "execution": "completa",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "1 dia"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 135,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "contencao-fantasmagorica",
+      "title": "Contenção Fantasmagórica",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 2,
+      "summary": "Manifesta amarras de energia que restringem os movimentos de um alvo.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Manifesta amarras de energia que restringem os movimentos de um alvo.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "aumenta o número de laços para 6, e você pode escolher o alvo de cada laço, com um mínimo de dois laços por alvo",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo e afinidade"
+          ],
+          "referenceSummary": "como discente, e cada laço destruído libera uma onda de choque que causa 2d6+2 pontos de dano de Energia no alvo agarrado",
+          "costPE": 8
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "médio",
+        "target": "1 ser",
+        "duration": "cena",
+        "resistance": "Reflexos anula"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 135,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "controle-mental",
+      "title": "Controle Mental",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 4,
+      "summary": "Submete as ações de uma pessoa ou animal a comandos, sujeitos às limitações e resistências do efeito.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Submete as ações de uma pessoa ou animal a comandos, sujeitos às limitações e resistências do efeito.",
+          "costPE": 10
+        },
+        {
+          "name": "Discente",
+          "extraPE": 5,
+          "requirements": [],
+          "referenceSummary": "Alvo: até cinco pessoas ou animais",
+          "costPE": 15
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 10,
+          "requirements": [
+            "afinidade com Conhecimento"
+          ],
+          "referenceSummary": "Alvo: até dez pessoas ou animais",
+          "costPE": 20
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "médio",
+        "target": "1 pessoa ou animal",
+        "resistance": "Vonta"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 136,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "convocacao-instantanea",
+      "title": "Convocação Instantânea",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 3,
+      "summary": "Cria uma ligação com um objeto para transportá-lo posteriormente até o conjurador.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Cria uma ligação com um objeto para transportá-lo posteriormente até o conjurador.",
+          "costPE": 6
+        },
+        {
+          "name": "Discente",
+          "extraPE": 4,
+          "requirements": [],
+          "referenceSummary": "Alvo: um objeto de até 10 espaços",
+          "costPE": 10
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 9,
+          "requirements": [],
+          "referenceSummary": "Permite guardar um recipiente e seu conteúdo no Outro Lado, convocando-o por uma miniatura vinculada.",
+          "costPE": 15
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "ilimitado",
+        "target": "1 objeto de até 2 espaços",
+        "resistance": "Vontade anula"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 136,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "convocar-o-algoz",
+      "title": "Convocar o Algoz",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 4,
+      "summary": "Manifesta um perseguidor paranormal dedicado a alcançar um alvo específico.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Manifesta um perseguidor paranormal dedicado a alcançar um alvo específico.",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "1,5m",
+        "target": "1 pessoa",
+        "duration": "sustentada",
+        "resistance": "Vonta"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 136,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "corpo-adaptado",
+      "title": "Corpo Adaptado",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 1,
+      "summary": "Ajusta o organismo a condições ambientais adversas, incluindo temperaturas extremas e ambientes aquáticos.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Ajusta o organismo a condições ambientais adversas, incluindo temperaturas extremas e ambientes aquáticos.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [],
+          "referenceSummary": "Duração: 1 dia",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [],
+          "referenceSummary": "Alcance: “curto” e o alvo para “pessoas ou animais escolhidos”",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 pessoa ou animal",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 136,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "decadencia",
+      "title": "Decadência",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 1,
+      "summary": "Acelera a deterioração do alvo, causando dano de Morte pelo contato.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Acelera a deterioração do alvo, causando dano de Morte pelo contato.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [],
+          "referenceSummary": "muda a resistência para “nenhuma” e o dano para 3d8+3.",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "Alcance: “pessoal” o alvo para “área: explosão com 6m de raio” e o dano para 8d8+8.",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 ser",
+        "duration": "instantâ",
+        "resistance": "Fortitude reduz"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 137,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "definhar",
+      "title": "Definhar",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 1,
+      "summary": "Enfraquece o corpo do alvo e prejudica seu desempenho físico.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Enfraquece o corpo do alvo e prejudica seu desempenho físico.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [
+            "2º círculo"
+          ],
+          "referenceSummary": "em vez do normal, o alvo fica exausto.",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo e afinidade com Morte"
+          ],
+          "referenceSummary": "como discente, mas Alvo: “até 5 seres”",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "1 ser",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 137,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "04",
+          "title": "Arquivos-Secretos.03.pdf",
+          "pdfPage": 88,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "deflagracao-de-energia",
+      "title": "Deflagração de Energia",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 4,
+      "summary": "Libera uma explosão devastadora de Energia, com efeitos adicionais sobre objetos paranormais.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Libera uma explosão devastadora de Energia, com efeitos adicionais sobre objetos paranormais.",
+          "costPE": 10
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [],
+          "referenceSummary": "afeta apenas alvos a sua escolha",
+          "costPE": 15
+        }
+      ],
+      "original": {
+        "execution": "completa",
+        "range": "pessoal",
+        "target": "que passem",
+        "area": "explosão de 15m de raio",
+        "resistance": "Fortitude parcial"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 137,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "desacelerar-impacto",
+      "title": "Desacelerar Impacto",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 2,
+      "summary": "Interfere na velocidade de uma queda ou de um impacto para reduzir seus efeitos.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Interfere na velocidade de uma queda ou de um impacto para reduzir seus efeitos.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "aumenta o total de alvos para seres ou objetos somando até 100 espaços",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "reação",
+        "range": "curto",
+        "target": "1 ser ou objetos somando",
+        "duration": "até chegar ao solo ou"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 137,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "descansar",
+      "title": "Descansar",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 2,
+      "summary": "Nome apresentado em uma ficha para um efeito de laceração e hemorragia semelhante a Descarnar; mantido como referência, sem presumir correção oficial.",
+      "forms": [
+        {
+          "name": "Discente",
+          "extraPE": null,
+          "costPE": null,
+          "requirements": [],
+          "referenceSummary": "Nome apresentado em uma ficha para um efeito de laceração e hemorragia semelhante a Descarnar; mantido como referência, sem presumir correção oficial."
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "duration": "não especificada na ficha",
+        "resistance": "Fortitude"
+      },
+      "sources": [
+        {
+          "id": "03",
+          "title": "Arquivos-Secretos-02.pdf",
+          "pdfPage": 91,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 2
+        }
+      ],
+      "notes": [
+        "Disponível apenas como efeito resumido de ficha de ameaça nesta coleção; parâmetros ausentes não foram inventados.",
+        "Nome possivelmente inconsistente com Descarnar; mantido como está no documento, sem tratá-lo como errata oficial."
+      ]
+    },
+    {
+      "id": "descarnar",
+      "title": "Descarnar",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 2,
+      "summary": "Provoca lacerações profundas e sangramento por contato, combinando dano físico e paranormal.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Provoca lacerações profundas e sangramento por contato, combinando dano físico e paranormal.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "muda o dano direto para 10d8 e o dano da hemorragia para 4d8",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "3º círculo e afinidade"
+          ],
+          "referenceSummary": "Alvo: você e a du - ração para sustentada.",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 ser",
+        "duration": "instantânea",
+        "resistance": "Fortitude parcial"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 137,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "02",
+          "title": "Arquivos-Secretos-01.pdf",
+          "pdfPage": 29,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 2
+        },
+        {
+          "id": "02",
+          "title": "Arquivos-Secretos-01.pdf",
+          "pdfPage": 30,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 2
+        },
+        {
+          "id": "04",
+          "title": "Arquivos-Secretos.03.pdf",
+          "pdfPage": 69,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "desfazer-sinapses",
+      "title": "Desfazer Sinapses",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 1,
+      "summary": "Desorganiza o cérebro do alvo, causando dano de Conhecimento e prejudicando sua atividade mental.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Desorganiza o cérebro do alvo, causando dano de Conhecimento e prejudicando sua atividade mental.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [
+            "2º círculo"
+          ],
+          "referenceSummary": "Alcance: longo, o dano para 3d6+3 e o alvo para até 5 seres a sua escolha",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "Alcance: extremo, o dano para 8d6+8 e a condição para esmorecido.",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "1 ser",
+        "duration": "instantânea",
+        "resistance": "Vontade parcial"
+      },
+      "sources": [
+        {
+          "id": "01",
+          "title": "OP - Sobrevivendo ao Horror 1.2.pdf",
+          "pdfPage": 54,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "03",
+          "title": "Arquivos-Secretos-02.pdf",
+          "pdfPage": 82,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "deteccao-de-ameacas",
+      "title": "Detecção de Ameaças",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 2,
+      "summary": "Alerta o conjurador para hostilidade e perigos ocultos nas proximidades.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Alerta o conjurador para hostilidade e perigos ocultos nas proximidades.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "além do normal, você não fica desprevenido contra perigos detectados e recebe +5 em testes de resistência contra armadilhas",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "4º círculo"
+          ],
+          "referenceSummary": "Duração: “1 dia” e concede os mesmos benefícios de discente",
+          "costPE": 8
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "pessoal",
+        "area": "esfera de 18m de raio",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 138,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "dissipar-ritual",
+      "title": "Dissipar Ritual",
+      "elements": [
+        "MEDO"
+      ],
+      "circle": 3,
+      "summary": "Tenta encerrar uma manifestação ritualística ativa em um alvo ou região.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Tenta encerrar uma manifestação ritualística ativa em um alvo ou região.",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "médio",
+        "target": "ou Área: 1 ser ou objeto,",
+        "area": "1 ser ou objeto,",
+        "duration": "instantânea"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 138,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "dissonancia-acustica",
+      "title": "Dissonância Acústica",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 2,
+      "summary": "Cria uma região na qual o som deixa de se propagar normalmente, prejudicando comunicação e conjuração.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Cria uma região na qual o som deixa de se propagar normalmente, prejudicando comunicação e conjuração.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 1,
+          "requirements": [],
+          "referenceSummary": "Área: “alvo: 1 ob j eto” .",
+          "costPE": 4
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 3,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "Duração: cena.",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "médio",
+        "area": "esfera com 6m de raio"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 138,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "09",
+          "title": "4rqu1v05 53cr3t05.pdf",
+          "pdfPage": 57,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "distorcao-temporal",
+      "title": "Distorção Temporal",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 4,
+      "summary": "Isola o conjurador em um intervalo temporal próprio, com restrições sobre interferências externas.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Isola o conjurador em um intervalo temporal próprio, com restrições sobre interferências externas.",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "pessoal",
+        "target": "veja texto",
+        "duration": "veja texto"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 138,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "distorcer-aparencia",
+      "title": "Distorcer Aparência",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 1,
+      "summary": "Modifica características visíveis e identificadores físicos sem conceder as capacidades de outra pessoa.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Modifica características visíveis e identificadores físicos sem conceder as capacidades de outra pessoa.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [],
+          "referenceSummary": "Alcance: “curto” e o alvo para “1 ser” .",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "como em Discente, mas Alvo: “seres escolhidos”",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 138,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "02",
+          "title": "Arquivos-Secretos-01.pdf",
+          "pdfPage": 33,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 1
+        },
+        {
+          "id": "03",
+          "title": "Arquivos-Secretos-02.pdf",
+          "pdfPage": 82,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "eco-espiral",
+      "title": "Eco Espiral",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 2,
+      "summary": "Acumula a repercussão de ferimentos sofridos por um alvo para reproduzi-los como dano de Morte.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Acumula a repercussão de ferimentos sofridos por um alvo para reproduzi-los como dano de Morte.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "Alvo: “até 5 seres”",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "4º círculo e afinidade"
+          ],
+          "referenceSummary": "Duração: “até 3 rodadas” , permitindo que você se concentre nas duas primeiras e descarregue na terceira",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "1 ser",
+        "duration": "2 rodadas",
+        "resistance": "Fortitude reduz"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 139,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "eletrocussao",
+      "title": "Eletrocussão",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 1,
+      "summary": "Projeta eletricidade contra um alvo e pode comprometer seu movimento ou equipamentos.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Projeta eletricidade contra um alvo e pode comprometer seu movimento ou equipamentos.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [
+            "2º círculo"
+          ],
+          "referenceSummary": "Alvo: “área: linha de 30m” .",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "Área: “alvos es - colhidos” .",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "1 ser ou objeto",
+        "duration": "instantâ",
+        "resistance": "Fortitude parcial"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 139,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "03",
+          "title": "Arquivos-Secretos-02.pdf",
+          "pdfPage": 74,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 1
+        },
+        {
+          "id": "09",
+          "title": "4rqu1v05 53cr3t05.pdf",
+          "pdfPage": 55,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 1
+        },
+        {
+          "id": "09",
+          "title": "4rqu1v05 53cr3t05.pdf",
+          "pdfPage": 56,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 1
+        },
+        {
+          "id": "09",
+          "title": "4rqu1v05 53cr3t05.pdf",
+          "pdfPage": 57,
+          "kind": "Forma Verdadeiro em ficha de ameaça",
+          "form": "Verdadeiro",
+          "circle": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "embaralhar",
+      "title": "Embaralhar",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 1,
+      "summary": "Produz imagens sobrepostas do conjurador para confundir ataques dirigidos a ele.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Produz imagens sobrepostas do conjurador para confundir ataques dirigidos a ele.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [
+            "2º círculo"
+          ],
+          "referenceSummary": "muda o número de cópias para 5 (e o bônus na Defesa para +10)",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "muda o número de cópias para 8 (e o bônus na Defesa para +16).",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 139,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "enfeiticar",
+      "title": "Enfeitiçar",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 1,
+      "summary": "Influencia a disposição de uma pessoa, tornando-a mais receptiva, sem equivaler a controle irrestrito.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Influencia a disposição de uma pessoa, tornando-a mais receptiva, sem equivaler a controle irrestrito.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [
+            "2º círculo"
+          ],
+          "referenceSummary": "Troca a disposição favorável por uma sugestão plausível; ordens incompatíveis com a aceitação do alvo rompem a influência.",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "afeta todos os alvos dentro do alcance",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "1 pessoa",
+        "duration": "cena",
+        "resistance": "Vontade anula"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 139,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "05",
+          "title": "Arquivos Secretos Panacea atualizado.pdf",
+          "pdfPage": 37,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 1
+        },
+        {
+          "id": "08",
+          "title": "Arquivos-Secretos.SDOL-v1.0.pdf",
+          "pdfPage": 45,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "esconder-dos-olhos",
+      "title": "Esconder dos Olhos",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 2,
+      "summary": "Oculta o conjurador da visão comum; ações hostis e determinadas interações podem romper o efeito.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Oculta o conjurador da visão comum; ações hostis e determinadas interações podem romper o efeito.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "Duração: “sustenta d a” .",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "4º círculo e afinidade"
+          ],
+          "referenceSummary": "muda a execução para “ação pa drão ” , o alcance para “toque” , o alvo para “1 ser” e a duração para “sustentada” .",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "livre",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "1 rodada"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 140,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "02",
+          "title": "Arquivos-Secretos-01.pdf",
+          "pdfPage": 33,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 2
+        },
+        {
+          "id": "03",
+          "title": "Arquivos-Secretos-02.pdf",
+          "pdfPage": 74,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "esconder-os-olhos",
+      "title": "Esconder os Olhos",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 1,
+      "summary": "Variação de ocultação apresentada em ficha de ameaça: invisibilidade breve, sem tornar invisíveis efeitos externos ao corpo.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "costPE": 1,
+          "requirements": [],
+          "referenceSummary": "Variação de ocultação apresentada em ficha de ameaça: invisibilidade breve, sem tornar invisíveis efeitos externos ao corpo."
+        }
+      ],
+      "original": {
+        "execution": "livre",
+        "range": "pessoal",
+        "duration": "1 rodada"
+      },
+      "sources": [
+        {
+          "id": "04",
+          "title": "Arquivos-Secretos.03.pdf",
+          "pdfPage": 88,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 1
+        }
+      ],
+      "notes": [
+        "Disponível apenas como efeito resumido de ficha de ameaça nesta coleção; parâmetros ausentes não foram inventados.",
+        "Nome e círculo diferem de Esconder dos Olhos no livro básico; esta entrada preserva a variante da ficha."
+      ]
+    },
+    {
+      "id": "esfolar",
+      "title": "Esfolar",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 1,
+      "summary": "Produz uma manifestação de Sangue que arranca a pele do alvo; versões superiores atingem uma região.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Produz uma manifestação de Sangue que arranca a pele do alvo; versões superiores atingem uma região.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [
+            "2º círculo"
+          ],
+          "referenceSummary": "Alcance: médio, o dano para 5d4+5 e o alvo para explosão com 6m de raio",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "Alcance: longo, o dano para 10d4+10 e o alvo para explosão com 6m de raio.",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "1 ser",
+        "duration": "instantânea",
+        "resistance": "Reflexos parcial"
+      },
+      "sources": [
+        {
+          "id": "01",
+          "title": "OP - Sobrevivendo ao Horror 1.2.pdf",
+          "pdfPage": 49,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "02",
+          "title": "Arquivos-Secretos-01.pdf",
+          "pdfPage": 28,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 1
+        },
+        {
+          "id": "02",
+          "title": "Arquivos-Secretos-01.pdf",
+          "pdfPage": 29,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 1
+        },
+        {
+          "id": "02",
+          "title": "Arquivos-Secretos-01.pdf",
+          "pdfPage": 30,
+          "kind": "Forma Verdadeiro em ficha de ameaça",
+          "form": "Verdadeiro",
+          "circle": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "espelho",
+      "title": "Espelho",
+      "elements": [
+        "SANGUE",
+        "CONHECIMENTO"
+      ],
+      "circle": 2,
+      "summary": "Cria uma cópia orgânica controlável de um ser conhecido; perceber pelo duplo deixa o corpo do conjurador vulnerável.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "costPE": 3,
+          "requirements": [],
+          "referenceSummary": "Cria uma cópia orgânica controlável de um ser conhecido; perceber pelo duplo deixa o corpo do conjurador vulnerável."
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "não especificado na ficha",
+        "duration": "enquanto controlar a cópia"
+      },
+      "sources": [
+        {
+          "id": "02",
+          "title": "Arquivos-Secretos-01.pdf",
+          "pdfPage": 33,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 2
+        }
+      ],
+      "notes": [
+        "Disponível apenas como efeito resumido de ficha de ameaça nesta coleção; parâmetros ausentes não foram inventados."
+      ]
+    },
+    {
+      "id": "espirais-da-perdicao",
+      "title": "Espirais da Perdição",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 1,
+      "summary": "Marca um adversário com interferências de Morte que enfraquecem sua capacidade ofensiva.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Marca um adversário com interferências de Morte que enfraquecem sua capacidade ofensiva.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [
+            "2º círculo"
+          ],
+          "referenceSummary": "muda a penalidade para – OO",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 8,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "muda a penalidade para – OO.",
+          "costPE": 9
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "1 ser",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 140,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "fedor-putrido",
+      "title": "Fedor Pútrido",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 3,
+      "summary": "Mantém o corpo sob aparência e funções de um cadáver para ocultação, causando desgaste enquanto sustentado.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Mantém o corpo sob aparência e funções de um cadáver para ocultação, causando desgaste enquanto sustentado.",
+          "costPE": 6
+        },
+        {
+          "name": "Discente",
+          "extraPE": 4,
+          "requirements": [],
+          "referenceSummary": "Alcance: toque e o alvo para 1 ser voluntário",
+          "costPE": 10
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 9,
+          "requirements": [
+            "afinidade"
+          ],
+          "referenceSummary": "Alcance: curto e o alvo para até 5 seres voluntários",
+          "costPE": 15
+        }
+      ],
+      "original": {
+        "execution": "ação padrão",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "sustentada"
+      },
+      "sources": [
+        {
+          "id": "01",
+          "title": "OP - Sobrevivendo ao Horror 1.2.pdf",
+          "pdfPage": 53,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "ferver-sangue",
+      "title": "Ferver Sangue",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 3,
+      "summary": "Aquece o sangue de um alvo, causando sofrimento contínuo e debilitando o corpo.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Aquece o sangue de um alvo, causando sofrimento contínuo e debilitando o corpo.",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 4,
+          "requirements": [
+            "4º círculo e afinidade"
+          ],
+          "referenceSummary": "Alvo: “seres esco - lhidos”",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "1 ser",
+        "duration": "sustentada",
+        "resistance": "Fortitude parcial"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 140,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "fim-inevitavel",
+      "title": "Fim Inevitável",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 4,
+      "summary": "Abre uma anomalia que atrai e destrói matéria próxima, com risco também para aliados.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Abre uma anomalia que atrai e destrói matéria próxima, com risco também para aliados.",
+          "costPE": 10
+        },
+        {
+          "name": "Discente",
+          "extraPE": 5,
+          "requirements": [
+            "afinidade"
+          ],
+          "referenceSummary": "Duração: “5 rodadas” e o efeito para que você não seja afetado",
+          "costPE": 15
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 10,
+          "requirements": [
+            "afinidade"
+          ],
+          "referenceSummary": "Duração: “6 rodadas” e o efeito para que seres escolhidos dentro do alcance não sejam afetados",
+          "costPE": 20
+        }
+      ],
+      "original": {
+        "execution": "completa",
+        "range": "extremo",
+        "duration": "4 ro",
+        "resistance": "Fortitude parcial"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 140,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "flagelo-de-sangue",
+      "title": "Flagelo de Sangue",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 2,
+      "summary": "Impõe uma ordem por meio de uma marca corporal e de compulsão paranormal.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Impõe uma ordem por meio de uma marca corporal e de compulsão paranormal.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "Alvo: “1 ser (exceto criaturas de Sangue)”",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "4º círculo e afinidade"
+          ],
+          "referenceSummary": "como Discente, e Duração: “1 dia”",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 pessoa",
+        "duration": "cena",
+        "resistance": "Fortitude parcial"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 141,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "03",
+          "title": "Arquivos-Secretos-02.pdf",
+          "pdfPage": 74,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 2
+        },
+        {
+          "id": "04",
+          "title": "Arquivos-Secretos.03.pdf",
+          "pdfPage": 69,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "forma-monstruosa",
+      "title": "Forma Monstruosa",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 3,
+      "summary": "Altera o corpo para uma forma bestial, ampliando suas capacidades e impondo limitações à mente.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Altera o corpo para uma forma bestial, ampliando suas capacidades e impondo limitações à mente.",
+          "costPE": 6
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "além do normal, você recebe imunidade a atordoamento, fadiga, san g ramento, sono e veneno",
+          "costPE": 9
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 9,
+          "requirements": [
+            "4º círculo e afinidade"
+          ],
+          "referenceSummary": "muda os bônus em testes de ataque e rolagens de dano para +10 e os PV temporários para 50",
+          "costPE": 15
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 141,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "fortalecimento-sensorial",
+      "title": "Fortalecimento Sensorial",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 1,
+      "summary": "Aguça os sentidos e a capacidade de perceber ou reagir ao ambiente.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Aguça os sentidos e a capacidade de perceber ou reagir ao ambiente.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [
+            "2º círculo"
+          ],
+          "referenceSummary": "além do normal, seus inimigos sofrem –O em testes de ataque contra você",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "4º círculo e afinidade"
+          ],
+          "referenceSummary": "além do normal, você apura seus sentidos para perceber perigo.",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 141,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "02",
+          "title": "Arquivos-Secretos-01.pdf",
+          "pdfPage": 33,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "hemofagia",
+      "title": "Hemofagia",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 2,
+      "summary": "Extrai vitalidade pelo sangue para ferir um alvo e recuperar o conjurador.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Extrai vitalidade pelo sangue para ferir um alvo e recuperar o conjurador.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "muda a resistência para “nenhuma” .",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [],
+          "referenceSummary": "Permite repetir a extração de vitalidade durante a cena, em vez de realizar uma única drenagem.",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 ser",
+        "duration": "instantâ",
+        "resistance": "Fortitude reduz"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 141,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "02",
+          "title": "Arquivos-Secretos-01.pdf",
+          "pdfPage": 30,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 2
+        },
+        {
+          "id": "03",
+          "title": "Arquivos-Secretos-02.pdf",
+          "pdfPage": 78,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 2
+        },
+        {
+          "id": "04",
+          "title": "Arquivos-Secretos.03.pdf",
+          "pdfPage": 47,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 2
+        },
+        {
+          "id": "04",
+          "title": "Arquivos-Secretos.03.pdf",
+          "pdfPage": 69,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "hesitacao-forcada",
+      "title": "Hesitação Forçada",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 1,
+      "summary": "Amplifica dúvidas para dificultar ações hostis e prejudicar testes enquanto a pessoa tenta romper a influência.",
+      "forms": [
+        {
+          "name": "Discente",
+          "extraPE": null,
+          "costPE": null,
+          "requirements": [],
+          "referenceSummary": "Amplifica dúvidas para dificultar ações hostis e prejudicar testes enquanto a pessoa tenta romper a influência."
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "duration": "cena ou até resistir",
+        "resistance": "Vontade"
+      },
+      "sources": [
+        {
+          "id": "05",
+          "title": "Arquivos Secretos Panacea atualizado.pdf",
+          "pdfPage": 37,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 1
+        }
+      ],
+      "notes": [
+        "Disponível apenas como efeito resumido de ficha de ameaça nesta coleção; parâmetros ausentes não foram inventados."
+      ]
+    },
+    {
+      "id": "inexistir",
+      "title": "Inexistir",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 4,
+      "summary": "Tenta apagar um alvo da Realidade, com um efeito destrutivo mesmo quando encontra resistência.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Tenta apagar um alvo da Realidade, com um efeito destrutivo mesmo quando encontra resistência.",
+          "costPE": 10
+        },
+        {
+          "name": "Discente",
+          "extraPE": 5,
+          "requirements": [],
+          "referenceSummary": "Dano: 15d12+15 e o dano resistido para 3d12",
+          "costPE": 15
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 10,
+          "requirements": [
+            "afinidade"
+          ],
+          "referenceSummary": "Dano: 20d12+20 e o dano resistido para 4d12",
+          "costPE": 20
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 ser",
+        "duration": "instantânea",
+        "resistance": "Vontade parcial"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 142,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "invadir-mente",
+      "title": "Invadir Mente",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 2,
+      "summary": "Ataca a mente ou estabelece comunicação telepática, conforme a modalidade escolhida.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Ataca a mente ou estabelece comunicação telepática, conforme a modalidade escolhida.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "se escolhar rajada mental, Dano: 10d6.",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "4º círculo"
+          ],
+          "referenceSummary": "se escolher rajada mental, Dano: 10d6 e Alvo: “seres escolhidos” .",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "médio ou toque",
+        "target": "1 ser ou 2 pessoas",
+        "resistance": "Vontade parcial ou"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 142,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "05",
+          "title": "Arquivos Secretos Panacea atualizado.pdf",
+          "pdfPage": 37,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 2
+        },
+        {
+          "id": "08",
+          "title": "Arquivos-Secretos.SDOL-v1.0.pdf",
+          "pdfPage": 45,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "involucro-de-carne",
+      "title": "Invólucro de Carne",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 4,
+      "summary": "Cria uma duplicata orgânica vinculada ao conjurador, que pode servir de corpo substituto.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Cria uma duplicata orgânica vinculada ao conjurador, que pode servir de corpo substituto.",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 142,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "labirinto-mental",
+      "title": "Labirinto Mental",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 2,
+      "summary": "Aprisiona a mente de uma pessoa em uma percepção labiríntica, induzindo deslocamento sem direção coerente.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Aprisiona a mente de uma pessoa em uma percepção labiríntica, induzindo deslocamento sem direção coerente.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "Alcance: longo",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "3º Círculo"
+          ],
+          "referenceSummary": "Alcance: longo e a duração para cena, mas o alvo ainda pode tentar se libertar no início de seus turnos",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "médio",
+        "target": "1 pessoa",
+        "duration": "1d4 rodadas",
+        "resistance": "Vontade evita"
+      },
+      "sources": [
+        {
+          "id": "03",
+          "title": "Arquivos-Secretos-02.pdf",
+          "pdfPage": 66,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "03",
+          "title": "Arquivos-Secretos-02.pdf",
+          "pdfPage": 63,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "lamina-do-medo",
+      "title": "Lâmina do Medo",
+      "elements": [
+        "MEDO"
+      ],
+      "circle": 4,
+      "summary": "Manifesta um ataque formado por Medo puro, associado a condições específicas de acesso.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Manifesta um ataque formado por Medo puro, associado a condições específicas de acesso.",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 ser",
+        "duration": "instantâ",
+        "resistance": "Fortitude parcial"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 143,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "lingua-morta",
+      "title": "Língua Morta",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 2,
+      "summary": "Obtém respostas limitadas de um cadáver; prolongar a comunicação pode produzir uma manifestação perigosa de Morte.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Obtém respostas limitadas de um cadáver; prolongar a comunicação pode produzir uma manifestação perigosa de Morte.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "aumenta o limite para quatro rodadas.",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "4º círculo e afinidade"
+          ],
+          "referenceSummary": "aumenta o limite para cinco rodadas",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 cadáver",
+        "duration": "sustentada"
+      },
+      "sources": [
+        {
+          "id": "01",
+          "title": "OP - Sobrevivendo ao Horror 1.2.pdf",
+          "pdfPage": 52,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "localizacao",
+      "title": "Localização",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 2,
+      "summary": "Indica a direção de um ser ou objeto procurado dentro dos limites do ritual.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Indica a direção de um ser ou objeto procurado dentro dos limites do ritual.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "Orienta uma pessoa pelo caminho mais direto para entrar em um local ou sair dele.",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "4º círculo"
+          ],
+          "referenceSummary": "aumenta a área para círculo de 1km de raio",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "pessoal",
+        "area": "círculo com 90m"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 143,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "luz",
+      "title": "Luz",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 1,
+      "summary": "Faz um objeto emitir iluminação paranormal; formas superiores alteram intensidade e aplicação.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Faz um objeto emitir iluminação paranormal; formas superiores alteram intensidade e aplicação.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [
+            "2º círculo"
+          ],
+          "referenceSummary": "Cria quatro fontes de luz flutuantes, posicionadas e movimentadas separadamente.",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "a luz é cálida como a do sol.",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "1 objeto",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 143,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "mapa-sanguineo",
+      "title": "Mapa Sanguíneo",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 2,
+      "summary": "Transforma uma superfície em mapa que revela posições de seres próximos; resistir evita ser localizado.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Transforma uma superfície em mapa que revela posições de seres próximos; resistir evita ser localizado.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "Acrescenta ao mapa uma indicação do estado de saúde dos seres localizados.",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 superfície",
+        "duration": "cena",
+        "resistance": "Vontade evita"
+      },
+      "sources": [
+        {
+          "id": "03",
+          "title": "Arquivos-Secretos-02.pdf",
+          "pdfPage": 65,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "03",
+          "title": "Arquivos-Secretos-02.pdf",
+          "pdfPage": 63,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "martirio-de-sangue",
+      "title": "Martírio de Sangue",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 4,
+      "summary": "Sacrifica progressivamente a identidade para obter capacidades monstruosas; o efeito culmina em transformação irreversível.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Sacrifica progressivamente a identidade para obter capacidades monstruosas; o efeito culmina em transformação irreversível.",
+          "costPE": 10
+        },
+        {
+          "name": "Discente",
+          "extraPE": 5,
+          "requirements": [
+            "afinidade"
+          ],
+          "referenceSummary": "muda os bônus para +20 e os PV temporários para 50",
+          "costPE": 15
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "veja texto"
+      },
+      "sources": [
+        {
+          "id": "01",
+          "title": "OP - Sobrevivendo ao Horror 1.2.pdf",
+          "pdfPage": 51,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "medo-tangivel",
+      "title": "Medo Tangível",
+      "elements": [
+        "MEDO"
+      ],
+      "circle": 4,
+      "summary": "Transforma a relação do corpo com a Realidade para resistir a agressões e efeitos mundanos.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Transforma a relação do corpo com a Realidade para resistir a agressões e efeitos mundanos.",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 143,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "mergulho-mental",
+      "title": "Mergulho Mental",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 3,
+      "summary": "Permite explorar pensamentos e informações presentes na mente de uma pessoa.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Permite explorar pensamentos e informações presentes na mente de uma pessoa.",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 4,
+          "requirements": [
+            "4º círculo"
+          ],
+          "referenceSummary": "Permite a incursão mental à distância mediante preparação prolongada e uma ligação material com o alvo.",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 pessoa",
+        "resistance": "Vontade parcial"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 144,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "miasma-entropico",
+      "title": "Miasma Entrópico",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 2,
+      "summary": "Preenche uma área com uma emanação que causa mal-estar e pode sufocar os atingidos.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Preenche uma área com uma emanação que causa mal-estar e pode sufocar os atingidos.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "Dano: 6d8 de Morte",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "Duração: 3 rodadas.",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "médio",
+        "area": "nuvem com 6m de raio",
+        "resistance": "Forti"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 144,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "milagre-ionizante",
+      "title": "Milagre Ionizante",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 3,
+      "summary": "Tenta remover uma condição, doença ou veneno pela alteração do organismo; pode causar uma infecção paranormal grave.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Tenta remover uma condição, doença ou veneno pela alteração do organismo; pode causar uma infecção paranormal grave.",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "ação completa",
+        "range": "toque",
+        "target": "1 ser",
+        "duration": "instantânea"
+      },
+      "sources": [
+        {
+          "id": "01",
+          "title": "OP - Sobrevivendo ao Horror 1.2.pdf",
+          "pdfPage": 57,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "mutar",
+      "title": "Mutar",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 3,
+      "summary": "Isola o alvo das ondas sonoras: ele deixa de produzir e receber sons, favorecendo ocultação e dificultando comunicação.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Isola o alvo das ondas sonoras: ele deixa de produzir e receber sons, favorecendo ocultação e dificultando comunicação.",
+          "costPE": 6
+        },
+        {
+          "name": "Discente",
+          "extraPE": 4,
+          "requirements": [],
+          "referenceSummary": "Alcance: toque e o alvo para 1 ser",
+          "costPE": 10
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 9,
+          "requirements": [
+            "afinidade com Energia"
+          ],
+          "referenceSummary": "Alcance: curto e o alvo para até 5 seres",
+          "costPE": 15
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "01",
+          "title": "OP - Sobrevivendo ao Horror 1.2.pdf",
+          "pdfPage": 57,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "nuvem-de-cinzas",
+      "title": "Nuvem de Cinzas",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 1,
+      "summary": "Cria uma nuvem de partículas que obstrui a visão e oferece camuflagem.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Cria uma nuvem de partículas que obstrui a visão e oferece camuflagem.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [
+            "2º círculo"
+          ],
+          "referenceSummary": "você pode escolher seres no alcance ao conjurar o ritual; eles enxergam através do efeito",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "além do normal, a nuvem fica espessa, quase sólida.",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 144,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "odio-incontrolavel",
+      "title": "Ódio Incontrolável",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 1,
+      "summary": "Amplifica agressividade e capacidades físicas, comprometendo tarefas que exigem razão ou autocontrole.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Amplifica agressividade e capacidades físicas, comprometendo tarefas que exigem razão ou autocontrole.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [],
+          "referenceSummary": "além do normal, sempre que o alvo usar a ação agredir, pode fazer um ataque corpo a corpo adicional contra o mesmo alvo",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo e afinidade"
+          ],
+          "referenceSummary": "muda o bônus de ataque e dano para +5 e o alvo passa a sofrer apenas metade do dano dos tipos balístico, corte, impacto e perfuração",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 pessoa",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 144,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "odor-da-cacada",
+      "title": "Odor da Caçada",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 3,
+      "summary": "Amplia a percepção por odores e favorece perseguições, mas deixa o organismo exaurido e faminto depois.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Amplia a percepção por odores e favorece perseguições, mas deixa o organismo exaurido e faminto depois.",
+          "costPE": 6
+        },
+        {
+          "name": "Discente",
+          "extraPE": 4,
+          "requirements": [],
+          "referenceSummary": "Alcance: toque e o alvo para 1 ser",
+          "costPE": 10
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 9,
+          "requirements": [
+            "afinidade"
+          ],
+          "referenceSummary": "Alcance: curto e o alvo para até 5 seres",
+          "costPE": 15
+        }
+      ],
+      "original": {
+        "execution": "ação padrão",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "01",
+          "title": "OP - Sobrevivendo ao Horror 1.2.pdf",
+          "pdfPage": 50,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "ouvir-os-sussurros",
+      "title": "Ouvir os Sussurros",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 1,
+      "summary": "Busca respostas nas vozes do Outro Lado, com risco de receber informações perturbadoras.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Busca respostas nas vozes do Outro Lado, com risco de receber informações perturbadoras.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [],
+          "referenceSummary": "Permite consultar possibilidades de um evento futuro próximo, preservando o risco de resposta adversa.",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "muda a execução para 10 mi - nutos e a duração para 5 rodadas.",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "completa",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "instantânea"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 145,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "overclock",
+      "title": "Overclock",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 1,
+      "summary": "Força um aparelho eletrônico a revelar informações por uma interação caótica, inutilizando seu funcionamento normal depois.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Força um aparelho eletrônico a revelar informações por uma interação caótica, inutilizando seu funcionamento normal depois.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [
+            "2º círculo"
+          ],
+          "referenceSummary": "você só falha no teste se errar duas vezes no jogo de estátua",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "você só falha no teste se errar três vezes no jogo de estátua",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "reação",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "instantânea"
+      },
+      "sources": [
+        {
+          "id": "01",
+          "title": "OP - Sobrevivendo ao Horror 1.2.pdf",
+          "pdfPage": 56,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "paradoxo",
+      "title": "Paradoxo",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 2,
+      "summary": "Manifesta uma região em que distorções temporais degradam os seres atingidos.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Manifesta uma região em que distorções temporais degradam os seres atingidos.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "Área: “efeito: es f era com tamanho Médio” e a duração para cena.",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "4º círculo"
+          ],
+          "referenceSummary": "Dano: 13d6.",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "médio",
+        "area": "esfera com 6m de raio",
+        "resistance": "Fortitude reduz"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 145,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "perturbacao",
+      "title": "Perturbação",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 1,
+      "summary": "Força uma pessoa a cumprir uma ordem breve e restrita, caso não resista à influência.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Força uma pessoa a cumprir uma ordem breve e restrita, caso não resista à influência.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [],
+          "referenceSummary": "Alvo: “1 ser” e adiciona o seguinte comando: “Sofra.",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo e afinidade"
+          ],
+          "referenceSummary": "Alvo: “até 5 seres” ou adiciona o seguinte comando: “ Ataque.",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "1 pessoa",
+        "duration": "1 rodada",
+        "resistance": "Vontade (anula)"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 145,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "03",
+          "title": "Arquivos-Secretos-02.pdf",
+          "pdfPage": 91,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 2,
+          "note": "Círculo indicado nesta ficha difere da descrição principal."
+        },
+        {
+          "id": "08",
+          "title": "Arquivos-Secretos.SDOL-v1.0.pdf",
+          "pdfPage": 45,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "poeira-da-podridao",
+      "title": "Poeira da Podridão",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 3,
+      "summary": "Cria uma nuvem que deteriora matéria e drena a vitalidade dos seres em seu interior.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Cria uma nuvem que deteriora matéria e drena a vitalidade dos seres em seu interior.",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 4,
+          "requirements": [],
+          "referenceSummary": "Dano: 4d8+16",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "médio",
+        "target": "que fa lhar em no teste também não podem",
+        "area": "nuvem com 6m de raio",
+        "resistance": "Fortitude (veja texto)"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 146,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "polarizacao-caotica",
+      "title": "Polarização Caótica",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 1,
+      "summary": "Atrai, repele ou movimenta objetos metálicos por interferência de Energia.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Atrai, repele ou movimenta objetos metálicos por interferência de Energia.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [],
+          "referenceSummary": "Projeta vários objetos metálicos de uma só vez como ataque contra os seres no trajeto.",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [],
+          "referenceSummary": "Alcance: médio.",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "você",
+        "duration": "sustentada"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 146,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "possessao",
+      "title": "Possessão",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 4,
+      "summary": "Projeta a consciência para ocupar o corpo de outra pessoa, mantendo uma ligação vulnerável com o corpo original.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Projeta a consciência para ocupar o corpo de outra pessoa, mantendo uma ligação vulnerável com o corpo original.",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "longo",
+        "target": "1 pessoa viva ou morta",
+        "duration": "1 dia",
+        "resistance": "Vontade anula"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 146,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "presenca-do-medo",
+      "title": "Presença do Medo",
+      "elements": [
+        "MEDO"
+      ],
+      "circle": 4,
+      "summary": "Manifesta uma presença incompatível com a Realidade que causa efeitos extremos aos que a percebem.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Manifesta uma presença incompatível com a Realidade que causa efeitos extremos aos que a percebem.",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "pessoal",
+        "target": "dentro da",
+        "area": "emanação de 9m de raio"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 147,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "pronunciar-sigilo",
+      "title": "Pronunciar Sigilo",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 4,
+      "summary": "Profere um sigilo impossível capaz de confundir, privar da visão ou retirar temporariamente um ser da Realidade.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Profere um sigilo impossível capaz de confundir, privar da visão ou retirar temporariamente um ser da Realidade.",
+          "costPE": 10
+        },
+        {
+          "name": "Discente",
+          "extraPE": 5,
+          "requirements": [],
+          "referenceSummary": "Alcance: extremo",
+          "costPE": 15
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 10,
+          "requirements": [
+            "afinidade"
+          ],
+          "referenceSummary": "Alvo: até cinco seres",
+          "costPE": 20
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "1 ser",
+        "duration": "instantânea/",
+        "resistance": "Vontade parcial"
+      },
+      "sources": [
+        {
+          "id": "01",
+          "title": "OP - Sobrevivendo ao Horror 1.2.pdf",
+          "pdfPage": 55,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "protecao-contra-rituais",
+      "title": "Proteção contra Rituais",
+      "elements": [
+        "MEDO"
+      ],
+      "circle": 2,
+      "summary": "Protege um ser contra influências e agressões paranormais.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Protege um ser contra influências e agressões paranormais.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "Alvo: “até 5 seres tocados”",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 6,
+          "requirements": [],
+          "referenceSummary": "Alvo: “até 5 seres tocados” , a resistência a dano para 10 e o bônus em testes de resistência para +10",
+          "costPE": 9
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 ser",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 147,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "protecao-sigilosa",
+      "title": "Proteção Sigilosa",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 2,
+      "summary": "Marca uma região com sigilos que protegem o conjurador e seus aliados dentro da área.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "costPE": 3,
+          "requirements": [],
+          "referenceSummary": "Marca uma região com sigilos que protegem o conjurador e seus aliados dentro da área."
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "duration": "cena",
+        "area": "3m de raio"
+      },
+      "sources": [
+        {
+          "id": "04",
+          "title": "Arquivos-Secretos.03.pdf",
+          "pdfPage": 11,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 2
+        }
+      ],
+      "notes": [
+        "Disponível apenas como efeito resumido de ficha de ameaça nesta coleção; parâmetros ausentes não foram inventados."
+      ]
+    },
+    {
+      "id": "purgatorio",
+      "title": "Purgatório",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 3,
+      "summary": "Cria uma região de sofrimento que torna os atingidos mais vulneráveis e pune tentativas de abandoná-la.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Cria uma região de sofrimento que torna os atingidos mais vulneráveis e pune tentativas de abandoná-la.",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "área de 6m de raio",
+        "duration": "sustentada",
+        "resistance": "Fortitude parcial"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 147,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "rajada-caotica",
+      "title": "Rajada Caótica",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 2,
+      "summary": "Concentra Energia em um disparo destrutivo; aprimoramentos ampliam o dano ou permitem repetir os disparos.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Concentra Energia em um disparo destrutivo; aprimoramentos ampliam o dano ou permitem repetir os disparos.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "o dano muda para 8d8 pontos de dano de Energia",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "3º Círculo"
+          ],
+          "referenceSummary": "o efeito muda para a descrição a seguir: “Você canaliza relâmpagos.",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "médio",
+        "target": "1 ser",
+        "duration": "instantânea",
+        "resistance": "Reflexos reduz o"
+      },
+      "sources": [
+        {
+          "id": "03",
+          "title": "Arquivos-Secretos-02.pdf",
+          "pdfPage": 67,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "03",
+          "title": "Arquivos-Secretos-02.pdf",
+          "pdfPage": 63,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "rejeitar-nevoa",
+      "title": "Rejeitar Névoa",
+      "elements": [
+        "MEDO"
+      ],
+      "circle": 2,
+      "summary": "Manifesta uma região que enfraquece manifestações paranormais e favorece resistência a rituais.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Manifesta uma região que enfraquece manifestações paranormais e favorece resistência a rituais.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [],
+          "referenceSummary": "além do normal, a DT de testes de resistência contra rituais realizados na área di - minui em –5",
+          "costPE": 5
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [],
+          "referenceSummary": "como discente, e o dano causado dentro da névoa por rituais é sempre mínimo",
+          "costPE": 8
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "area": "nuvem de 6m de raio",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 147,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "relembrar-fragmento",
+      "title": "Relembrar Fragmento",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 3,
+      "summary": "Restaura temporariamente informações escritas danificadas a partir de um fragmento material suficiente.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Restaura temporariamente informações escritas danificadas a partir de um fragmento material suficiente.",
+          "costPE": 6
+        },
+        {
+          "name": "Discente",
+          "extraPE": 4,
+          "requirements": [],
+          "referenceSummary": "o objeto permanece restaurado até o fim da missão",
+          "costPE": 10
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 9,
+          "requirements": [
+            "afinidade"
+          ],
+          "referenceSummary": "em vez da descrição original, o ritual pode ser usado para alterar o objeto de forma imperceptível, conforme a vontade do conjurador (transformando uma folha com um texto qualquer em um documento de permis - são de…",
+          "costPE": 15
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 objeto",
+        "duration": "instantânea"
+      },
+      "sources": [
+        {
+          "id": "01",
+          "title": "OP - Sobrevivendo ao Horror 1.2.pdf",
+          "pdfPage": 55,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "salto-fantasma",
+      "title": "Salto Fantasma",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 3,
+      "summary": "Transporta instantaneamente o conjurador para um ponto próximo, com formas que ampliam seu alcance ou transportam outros seres.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Transporta instantaneamente o conjurador para um ponto próximo, com formas que ampliam seu alcance ou transportam outros seres.",
+          "costPE": 6
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [],
+          "referenceSummary": "muda a execução para reação.",
+          "costPE": 8
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 4,
+          "requirements": [],
+          "referenceSummary": "Alcance: longo e o alvo para você e até dois outros seres voluntários que você esteja tocando",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "médio",
+        "target": "você",
+        "duration": "instantânea"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 147,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "09",
+          "title": "4rqu1v05 53cr3t05.pdf",
+          "pdfPage": 57,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "sede-de-adrenalina",
+      "title": "Sede de Adrenalina",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 2,
+      "summary": "Leva o corpo além do limite para superar uma dificuldade física ou suportar impacto, cobrando uma reação corporal severa.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Leva o corpo além do limite para superar uma dificuldade física ou suportar impacto, cobrando uma reação corporal severa.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "muda a redução de dano de impacto para 40",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "4º círculo e afinidade"
+          ],
+          "referenceSummary": "muda a redução de dano de impacto para 70",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "reação",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "instantânea"
+      },
+      "sources": [
+        {
+          "id": "01",
+          "title": "OP - Sobrevivendo ao Horror 1.2.pdf",
+          "pdfPage": 50,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "singularidade-temporal",
+      "title": "Singularidade Temporal",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 4,
+      "summary": "Acelera o envelhecimento de um objeto não paranormal até um estado avançado de deterioração.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Acelera o envelhecimento de um objeto não paranormal até um estado avançado de deterioração.",
+          "costPE": 10
+        },
+        {
+          "name": "Discente",
+          "extraPE": 5,
+          "requirements": [],
+          "referenceSummary": "muda o tamanho do objeto afetado para Grande",
+          "costPE": 15
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 10,
+          "requirements": [],
+          "referenceSummary": "muda o tamanho do objeto afetado para Enorme.",
+          "costPE": 20
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "1 objeto não paranormal Médio",
+        "duration": "instantânea",
+        "resistance": "veja texto"
+      },
+      "sources": [
+        {
+          "id": "01",
+          "title": "OP - Sobrevivendo ao Horror 1.2.pdf",
+          "pdfPage": 53,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "sopro-do-caos",
+      "title": "Sopro do Caos",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 2,
+      "summary": "Controla correntes de ar para deslocar, dispersar ou arremessar matéria.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Controla correntes de ar para deslocar, dispersar ou arremessar matéria.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "passa a afetar alvos Grandes",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 9,
+          "requirements": [],
+          "referenceSummary": "passa a afetar alvos Enormes",
+          "costPE": 12
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "médio",
+        "target": "involuntários têm direito a um teste",
+        "area": "varia",
+        "resistance": "veja texto"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 148,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "tecer-ilusao",
+      "title": "Tecer Ilusão",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 1,
+      "summary": "Constrói percepções falsas, visuais ou sonoras, com formas superiores capazes de simulações mais complexas.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Constrói percepções falsas, visuais ou sonoras, com formas superiores capazes de simulações mais complexas.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [
+            "2º círculo"
+          ],
+          "referenceSummary": "Combina sensações de diferentes sentidos e permite modificar a ilusão enquanto sustentada.",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "Simula um perigo mortal que pode ferir pela crença; resistência permite reconhecer a falsidade.",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "médio",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 148,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "04",
+          "title": "Arquivos-Secretos.03.pdf",
+          "pdfPage": 88,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "tela-de-ruido",
+      "title": "Tela de Ruído",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 2,
+      "summary": "Reveste o conjurador com uma defesa de Energia capaz de absorver ou amortecer agressões.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Reveste o conjurador com uma defesa de Energia capaz de absorver ou amortecer agressões.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "aumenta os PV temporário para 60 e a resistência para 30",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "4º círculo"
+          ],
+          "referenceSummary": "Alcance: curto e o alvo para 1 ser ou objeto Enorme ou menor.",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 149,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "08",
+          "title": "Arquivos-Secretos.SDOL-v1.0.pdf",
+          "pdfPage": 45,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 1,
+          "note": "Círculo indicado nesta ficha difere da descrição principal."
+        },
+        {
+          "id": "09",
+          "title": "4rqu1v05 53cr3t05.pdf",
+          "pdfPage": 56,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 2
+        },
+        {
+          "id": "09",
+          "title": "4rqu1v05 53cr3t05.pdf",
+          "pdfPage": 57,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "teletransporte",
+      "title": "Teletransporte",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 4,
+      "summary": "Transporta seres voluntários a outro local, sujeito às exigências de conhecimento do destino.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Transporta seres voluntários a outro local, sujeito às exigências de conhecimento do destino.",
+          "costPE": 10
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [],
+          "referenceSummary": "pode se teletransportar para qualquer local na Terra",
+          "costPE": 15
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "até 5 seres voluntários"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 149,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "tentaculos-de-lodo",
+      "title": "Tentáculos de Lodo",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 3,
+      "summary": "Invoca apêndices de Morte que atacam e prendem seres em uma região.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Invoca apêndices de Morte que atacam e prendem seres em uma região.",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [],
+          "referenceSummary": "aumenta o raio da área para 9m e aumenta o dano dos tentácu lo s para 6d6",
+          "costPE": 11
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "médio",
+        "area": "círculo com 6m de raio"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 149,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "terceiro-olho",
+      "title": "Terceiro Olho",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 1,
+      "summary": "Permite perceber auras e identificar indícios de manifestações paranormais.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Permite perceber auras e identificar indícios de manifestações paranormais.",
+          "costPE": 1
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [],
+          "referenceSummary": "Duração: 1 dia",
+          "costPE": 3
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [],
+          "referenceSummary": "também pode enxergar obje - tos e seres invisíveis, que aparecem como formas translúcidas",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 149,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "02",
+          "title": "Arquivos-Secretos-01.pdf",
+          "pdfPage": 33,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 1
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "transfigurar-agua",
+      "title": "Transfigurar Água",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 3,
+      "summary": "Manipula água e gelo em larga escala, alterando sua distribuição, estado ou comportamento.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Manipula água e gelo em larga escala, alterando sua distribuição, estado ou comportamento.",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [],
+          "referenceSummary": "aumenta o deslocamento de enchente para +12m e o dano de evaporar para 10d8",
+          "costPE": 11
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "longo",
+        "area": "esfera com 30m de raio",
+        "resistance": "veja texto"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 150,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "transfigurar-terra",
+      "title": "Transfigurar Terra",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 3,
+      "summary": "Modela materiais terrestres para modificar o ambiente e criar obstáculos ou passagens.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Modela materiais terrestres para modificar o ambiente e criar obstáculos ou passagens.",
+          "costPE": 6
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "Área: 15 cubos com 1,5m de lado",
+          "costPE": 9
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "4º círculo"
+          ],
+          "referenceSummary": "também afeta todos os tipos de minerais e metais",
+          "costPE": 13
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "longo",
+        "area": "9 cubos com 1,5m de lado",
+        "duration": "instantânea",
+        "resistance": "veja texto"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 150,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "transfusao-vital",
+      "title": "Transfusão Vital",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 2,
+      "summary": "Transfere parte da vitalidade do conjurador para recuperar outra pessoa.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Transfere parte da vitalidade do conjurador para recuperar outra pessoa.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "Você pode transferir até 50 pontos de vida",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "4º círculo"
+          ],
+          "referenceSummary": "Você pode transferir até 100 pontos de vida",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": "1 ser",
+        "duration": "instantânea"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 150,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "02",
+          "title": "Arquivos-Secretos-01.pdf",
+          "pdfPage": 29,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 2
+        },
+        {
+          "id": "02",
+          "title": "Arquivos-Secretos-01.pdf",
+          "pdfPage": 30,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "tremeluzir",
+      "title": "Tremeluzir",
+      "elements": [
+        "ENERGIA"
+      ],
+      "circle": 2,
+      "summary": "Permite atravessar obstáculos sólidos por interferência de Energia, com chance de falha e dano ao próprio corpo.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Permite atravessar obstáculos sólidos por interferência de Energia, com chance de falha e dano ao próprio corpo.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "Alcance: toque e o alvo para 1 ser voluntário",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "4º círculo"
+          ],
+          "referenceSummary": "Alcance: curto e o alvo para até 5 seres voluntários",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "ação padrão",
+        "range": "pessoal",
+        "target": "você",
+        "duration": "sustentada"
+      },
+      "sources": [
+        {
+          "id": "01",
+          "title": "OP - Sobrevivendo ao Horror 1.2.pdf",
+          "pdfPage": 56,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "vampirismo",
+      "title": "Vampirismo",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 2,
+      "summary": "Converte o corpo de uma pessoa em meio de absorver fragmentos de capacidades, percepções e vitalidade por consumo ritual.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Converte o corpo de uma pessoa em meio de absorver fragmentos de capacidades, percepções e vitalidade por consumo ritual.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 5,
+          "requirements": [
+            "3º círculo"
+          ],
+          "referenceSummary": "Amplia os benefícios obtidos pelos cinco tipos de vasos; permite acessar aptidões de patamar superior.",
+          "costPE": 8
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 10,
+          "requirements": [
+            "4º círculo e afinidade"
+          ],
+          "referenceSummary": "Amplia novamente os benefícios e os patamares de aptidões que podem ser absorvidos pelo ritual.",
+          "costPE": 13
+        }
+      ],
+      "original": {
+        "execution": "completa",
+        "range": "toque",
+        "target": "1 pessoa",
+        "duration": "cena"
+      },
+      "sources": [
+        {
+          "id": "07",
+          "title": "Arquivos.Secretos.Vampiros.pdf",
+          "pdfPage": 76,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "07",
+          "title": "Arquivos.Secretos.Vampiros.pdf",
+          "pdfPage": 42,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "velocidade-mortal",
+      "title": "Velocidade Mortal",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 2,
+      "summary": "Acelera temporariamente um alvo em relação ao fluxo normal do tempo.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Acelera temporariamente um alvo em relação ao fluxo normal do tempo.",
+          "costPE": 3
+        },
+        {
+          "name": "Discente",
+          "extraPE": 3,
+          "requirements": [],
+          "referenceSummary": "em vez de uma ação de movimento, o alvo recebe uma ação padrão adicional por turno",
+          "costPE": 6
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 7,
+          "requirements": [
+            "4º círculo e afinidade"
+          ],
+          "referenceSummary": "Alvo: “alvos es - colhidos”",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "1 ser",
+        "duration": "sustentada"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 150,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "videncia",
+      "title": "Vidência",
+      "elements": [
+        "CONHECIMENTO"
+      ],
+      "circle": 3,
+      "summary": "Permite observar e escutar um alvo à distância, com dificuldade variável conforme a ligação com ele.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Permite observar e escutar um alvo à distância, com dificuldade variável conforme a ligação com ele.",
+          "costPE": 6
+        }
+      ],
+      "original": {
+        "execution": "completa",
+        "range": "ilimitado",
+        "target": "1 ser",
+        "duration": "5 rodadas",
+        "resistance": "Vontade anula"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 151,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "vinculo-de-sangue",
+      "title": "Vínculo de Sangue",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 4,
+      "summary": "Estabelece uma ligação pela qual o alvo também sofre efeitos adversos recebidos pelo conjurador.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Estabelece uma ligação pela qual o alvo também sofre efeitos adversos recebidos pelo conjurador.",
+          "costPE": 10
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "1 ser",
+        "resistance": "Fortitude"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 151,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "03",
+          "title": "Arquivos-Secretos-02.pdf",
+          "pdfPage": 91,
+          "kind": "Forma Básica em ficha de ameaça",
+          "form": "Básica",
+          "circle": 4
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "vomitar-pestes",
+      "title": "Vomitar Pestes",
+      "elements": [
+        "SANGUE"
+      ],
+      "circle": 3,
+      "summary": "Produz um enxame paranormal que ocupa uma área e agride os seres alcançados.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Produz um enxame paranormal que ocupa uma área e agride os seres alcançados.",
+          "costPE": 6
+        },
+        {
+          "name": "Discente",
+          "extraPE": 2,
+          "requirements": [],
+          "referenceSummary": "além do normal, um alvo que falhe no teste de Reflexos fica agar rado ( o enxame escala e cobre o corpo dele).",
+          "costPE": 8
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 5,
+          "requirements": [],
+          "referenceSummary": "o enxame vira Enorme (cubo de 6m de lado) e ganha deslocamento de voo 18m",
+          "costPE": 11
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "médio",
+        "duration": "sustentada"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 151,
+          "kind": "Descrição de ritual"
+        },
+        {
+          "id": "02",
+          "title": "Arquivos-Secretos-01.pdf",
+          "pdfPage": 30,
+          "kind": "Forma Discente em ficha de ameaça",
+          "form": "Discente",
+          "circle": 3
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "zerar-entropia",
+      "title": "Zerar Entropia",
+      "elements": [
+        "MORTE"
+      ],
+      "circle": 3,
+      "summary": "Interrompe os processos temporais de um alvo, tornando-o lento ou impedindo seus movimentos.",
+      "forms": [
+        {
+          "name": "Básica",
+          "extraPE": 0,
+          "requirements": [],
+          "referenceSummary": "Interrompe os processos temporais de um alvo, tornando-o lento ou impedindo seus movimentos.",
+          "costPE": 6
+        },
+        {
+          "name": "Discente",
+          "extraPE": 4,
+          "requirements": [
+            "4º círculo"
+          ],
+          "referenceSummary": "Alvo: “1 ser”",
+          "costPE": 10
+        },
+        {
+          "name": "Verdadeiro",
+          "extraPE": 11,
+          "requirements": [
+            "4º círculo e afinidade"
+          ],
+          "referenceSummary": "Alvo: “seres escolhidos”",
+          "costPE": 17
+        }
+      ],
+      "original": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "1 pessoa",
+        "duration": "cena",
+        "resistance": "Vontade parcial"
+      },
+      "sources": [
+        {
+          "id": "00",
+          "title": "Ordem Paranormal 1.2 .pdf",
+          "pdfPage": 151,
+          "kind": "Descrição de ritual"
+        }
+      ],
+      "notes": []
+    }
+  ]
+}

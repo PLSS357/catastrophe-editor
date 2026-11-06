@@ -47,3 +47,11 @@ Abra `http://127.0.0.1:8771/tests/ui.html` para executar os fluxos automatizados
 `app.js` coordena os painéis de dados e a inicialização. `editor.js` integra ferramentas contextuais; `selection.js`, `transform.js`, `layers.js`, `text-editor.js`, `image-editor.js`, `components.js`, `styles.js`, `history.js`, `storage.js`, `migrations.js`, `export.js` e `shortcuts.js` separam suas responsabilidades. `model.mjs`, `grouping.mjs` e `sheet.mjs` preservam o modelo, agrupamento progressivo e renderização SVG já existentes.
 
 Não é uma ferramenta oficial de Ordem Paranormal. As regras e rituais são as adaptações de Catastrophe desta conversa.
+
+## Biblioteca completa de rituais — 0.3.1
+
+Em **Personagem → Rituais → Adicionar ritual**, consulte as **109 entradas e 274 formas** identificadas nos dez PDFs fornecidos. São 82 descrições do livro básico, 16 de Sobrevivendo ao Horror, seis descrições adicionais de suplementos e cinco entradas disponíveis apenas em fichas de ameaças. Referências repetidas ficam reunidas; variantes de nome e divergências de círculo são identificadas. A biblioteca oferece busca sem acentos e filtros de elemento, círculo, fonte e forma, com página do PDF e cobertura das fontes. Não inclui enredo, fichas de NPCs ou rituais narrativos sem entrada mecânica.
+
+As formas Básica, Discente e Verdadeiro aparecem apenas quando documentadas. **Amaldiçoar Arma** permite selecionar os quatro elementos originais. Custos e requisitos de Ordem são referências, não alterações nas regras de Catastrophe. As onze conversões já existentes mantêm os textos e custos anteriores. Os demais rituais podem ser adicionados como **resumo de referência em PE**. A opção **proposta de custo em PD** fornece apenas um ponto de partida: não converte nem balanceia automaticamente os efeitos. Todos os textos permanecem editáveis; nada é acrescentado automaticamente aos personagens.
+
+O arquivo `dist/rituals.json` contém somente metadados, resumos e referências. PDFs originais, texto integral dos livros e dados de marca d'água não são distribuídos. A página indica quando uma fonte não fornece uma descrição própria de ritual. **Capturar Momento**, **Descansar** e **Esconder os Olhos** conservam avisos sobre inconsistências encontradas nos documentos.
