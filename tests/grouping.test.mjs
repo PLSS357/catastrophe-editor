@@ -35,7 +35,7 @@ test('Duplicar um grupo não mantém vínculos com o grupo ou títulos originais
  const d=make(),attr=d.blocks.find(b=>b.type==='attributes'),ids=splitBlock(d,attr.id);groupSelection(d,ids);const gid=outerGroup(d.blocks.find(b=>b.id===ids[0]));const copies=duplicateSelection(d,ids);assert.equal(copies.length,2);assert.notEqual(outerGroup(d.blocks.find(b=>b.id===copies[0])),gid);assert.deepEqual(selectionFor(d,copies[0]),copies);validateImport(d);
  const ability=d.blocks.find(b=>b.type==='ability'),parts=splitBlock(d,ability.id);groupSelection(d,parts);const abCopies=duplicateSelection(d,parts);const newHeading=d.blocks.find(b=>abCopies.includes(b.id)&&b.type==='heading');assert.ok(abCopies.includes(newHeading.titleOf));validateImport(d);
 });
-test('Os dois marcadores de preparação são brancos e continuam interativos',()=>{
- const d=make(),counter=d.blocks.find(b=>b.type==='counter');counter.value=1;const svg=sheetSVG(d,src.skills,{}, {play:true});assert.equal((svg.match(/fill="#f5f3eb"/g)||[]).length,2);assert.equal((svg.match(/data-counter=/g)||[]).length,2);assert.ok(svg.includes('stroke="#11170e"'));
+test('Os dois marcadores de preparação são brancos e a prévia não possui controles de jogo',()=>{
+ const d=make(),counter=d.blocks.find(b=>b.type==='counter');counter.value=1;const svg=sheetSVG(d,src.skills,{}, {play:true});assert.equal((svg.match(/fill="#f5f3eb"/g)||[]).length,2);assert.equal((svg.match(/data-counter=/g)||[]).length,0);assert.ok(svg.includes('stroke="#11170e"'));
 });
 test('Importações com grupos inexistentes são recusadas',()=>{const d=make();d.blocks[0].groupIds=['ausente'];assert.throws(()=>validateImport(d));});

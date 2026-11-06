@@ -1,35 +1,49 @@
 # Catastrophe — Ateliê de fichas
 
-Editor estático de fichas de RPG, inspirado no layout do playtest de Ordem Paranormal II e preenchido com a adaptação caseira de Catastrophe v0.2.
+Editor visual de fichas de Catastrophe inspirado na composição do playtest de Ordem Paranormal II. Mantém os seis personagens, os repertórios e as regras da adaptação v0.2. A aplicação serve exclusivamente à criação e exportação de fichas; a prévia é somente leitura.
 
-## Funcionalidades
+Site: https://plss357.github.io/catastrophe-editor/
 
-- Seis modelos iniciais e criação de agentes em branco.
-- Atributos, perícias e suas especialidades, PV/PD, habilidades, rituais e inventário.
-- Blocos arrastáveis e redimensionáveis, camadas, alinhamento, cores, texto, imagens e marcadores.
-- Seleção múltipla por Shift/Ctrl/clique, botões de seleção nas camadas ou área de seleção no fundo.
-- Alinhamento por seis bordas/centros com um bloco de referência fixo, movimentação e redimensionamento em conjunto e distribuição de espaços para três ou mais blocos.
-- Modelos de composição; blocos livres são preservados ao trocar o modelo.
-- Ordem e visibilidade de linhas de perícia personalizáveis.
-- Desfazer/refazer, travas de posição, modo de visualização e acompanhamento de recursos.
-- Salvamento local em IndexedDB, com fallback para localStorage.
-- Exportação de PNG 3840 × 2862, SVG, JSON portátil com imagens e impressão.
+## Usar
 
-## Desenvolvimento
+Comece com um dos seis agentes ou use **Começar ficha nova**. Edite os dados em Personagem. Use **Elementos** para inserir componentes nativos, textos, retratos, linhas e formas próprias de fichas. Os painéis podem ser recolhidos na barra inferior.
 
-Sem dependências ou build. Sirva a pasta `dist/` com um servidor HTTP estático. Não abra diretamente por `file://`, pois os módulos e os modelos são carregados por HTTP.
+- **Transformações:** oito alças e alça superior de rotação; Shift mantém proporção ou usa passos de 15°; Alt redimensiona pelo centro e ignora o encaixe ao mover. Campos numéricos complementam as alças. Setas movem 1 px; Shift+setas, 10 px. Áreas fora da página são avisadas e não são exportadas.
+- **Guias:** arraste das réguas ou crie pelo painel Guias. Arraste para mover; dois cliques excluem. Há bloqueio, visibilidade, limpeza e configurações de sensibilidade, grade, página e elementos. Guias não são exportadas.
+- **Camadas e grupos:** reordene por arraste; renomeie o nome visual por dois cliques. Busque, bloqueie, oculte ou recolha grupos. Ctrl+G agrupa; Ctrl+Shift+G separa um nível. Desagrupar os blocos originais separa título/conteúdo e depois suas linhas. **Separar partes internas** de atributos, perícias, habilidades e rituais cria componentes vinculados aos dados. Isolar é temporário e não modifica a visibilidade salva.
+- **Alinhamento:** escolha um elemento ou grupo de referência para alinhar por seis bordas/centros, distribuir espaçamento ou igualar dimensões. A referência permanece parada.
+- **Textos:** dois cliques no texto abrem edição direta; Escape cancela, sair confirma. As propriedades incluem famílias de fonte, tamanho, peso, itálico, sublinhado, cor, espaços, margens, alinhamento, contorno e sombra. Títulos têm fonte, tamanho, peso e cor independentes. Formatar trecho aplica estilos estruturados por intervalos; o projeto não armazena HTML arbitrário. Fontes locais WOFF/WOFF2/TTF/OTF são incorporadas; use apenas fontes cuja licença permita esse uso.
+- **Imagens:** PNG, JPEG e WebP preservam seu arquivo original. O limite padrão é 24 MB por imagem, configurável em Guias; máximo de 40 megapixels. Zoom e deslocamento são internos à moldura. Recorte numérico não destrutivo, máscaras seguras, esmaecimento, brilho, contraste, saturação, temperatura e tons de cinza permanecem editáveis.
+- **Componentes e modelos:** salve uma seleção como componente ou a ficha como modelo. A biblioteca é local, com renomear, duplicar e excluir. Aplicar modelos preserva dados e retrato do personagem de destino; habilidades e rituais são vinculados por função/índice compatível. Há sete composições iniciais; confira os avisos de texto e ajuste os blocos ao repertório do personagem.
+- **Temas:** Clássico, Minimalista e Monocromático, além de estilos salvos. O tema não apaga substituições individuais. Copiar/colar estilo não copia dados de personagem.
 
-Execute `npm run check` para conferir a sintaxe e os testes do modelo. `tests/model.test.mjs` usa o test runner nativo do Node.
+## Salvar e recuperar
 
-## Dados e privacidade
+IndexedDB guarda fichas, versões e biblioteca. Indicadores mostram Salvando, Salvo ou Erro ao salvar. Há cópia de emergência local e versões automáticas, além de versões nomeadas em **Versões**. Restaurar cria uma cópia do estado anterior e pode ser desfeito. A comparação mostra atual e versão lado a lado. Fichas antigas são migradas para `schemaVersion: 2`; o identificador legado `version: 1` continua compatível.
 
-As fichas alteradas ficam no navegador usado, sem sincronização entre dispositivos. O arquivo JSON exportado serve como backup e transporte. O site é publicado com acesso privado do proprietário. Os retratos fornecidos pelo usuário são incluídos como modelos iniciais.
+O salvamento é por navegador e origem. O site GitHub e o site anterior não compartilham armazenamento. **Backup JSON** permanece acessível no cabeçalho e inclui os dados, composição, imagens, fontes e formatação da ficha aberta. A biblioteca de composições salvas é local; para transportá-la, insira a composição na ficha e exporte o JSON. Limites de armazenamento variam por navegador; em caso de erro, exporte JSON imediatamente. O histórico da sessão tem até 60 entradas e orçamento aproximado de 24 MB.
 
-## Referências
+## Exportar
 
-O tema visual reproduz a composição geral, cores por perfil, molduras e dados geométricos dos exemplos fornecidos. As regras são as adaptações caseiras desta conversa e não uma ferramenta oficial de Ordem Paranormal. Os textos de rituais contêm as versões reduzidas, não os valores originais do livro.
+**Exportar…** permite PNG padrão, alta resolução ou largura personalizada de 320 a 8000 px, sempre proporcional a 1920 × 1431. PNG e SVG permitem fundo transparente. O SVG incorpora imagens/fontes e preserva transformações, máscaras e opacidade. O PDF direto oferece A4, A3, Letter ou proporção da ficha, orientação e margens: contém a ficha rasterizada em alta qualidade, não texto vetorial selecionável. JSON é o projeto editável. A conferência opcional aponta elementos externos, imagens ausentes, transbordamento, fontes e referências inválidas, sem bloquear a exportação.
 
-## Grupos e partes editáveis
+## Atalhos
 
-Selecione vários elementos e use Agrupar (Ctrl+G). Desagrupar (Ctrl+Shift+G) separa grupos e, nos blocos originais, separa título e conteúdo; repetir no conteúdo de Atributos ou Perícias separa suas linhas. Dois cliques permitem selecionar um elemento dentro de um grupo. Grupos ficam salvos e mantêm a composição interna ao alinhar. O botão Começar ficha nova cria outra ficha sem substituir a atual. Os quadrados de preparação são brancos, com marca escura quando preenchidos.
+Ctrl/Command+Z desfaz; Ctrl+Shift+Z ou Ctrl+Y refaz. Ctrl+C/X/V copia, recorta e cola dentro do editor. Ctrl+D duplica; Ctrl+A seleciona elementos visíveis e desbloqueados. Ctrl+G agrupa e Ctrl+Shift+G desagrupa. Delete exclui. Ctrl+S força salvamento; Ctrl+0 ajusta à tela; Ctrl+1 usa 100%. Espaço+arraste navega e Ctrl+roda aplica zoom ao cursor. Atalhos de edição não interceptam campos de texto.
 
+## Desenvolvimento e testes
+
+Sem dependências de execução ou etapa de build. Sirva `dist/` por HTTP; módulos não devem ser abertos por `file://`.
+
+```sh
+npm run check
+python -m http.server 8771 --bind 127.0.0.1
+```
+
+Abra `http://127.0.0.1:8771/tests/ui.html` para executar os fluxos automatizados de interface, em uma origem reservada para testes. O teste cria uma ficha própria e não exclui dados. A suíte Node cobre histórico, armazenamento, migração, seleção, agrupamento, transformações, alinhamento, componentes, modelos, estilos, segurança e geração de arquivos. O workflow GitHub Pages executa os testes antes de publicar `dist/`.
+
+## Arquitetura
+
+`app.js` coordena os painéis de dados e a inicialização. `editor.js` integra ferramentas contextuais; `selection.js`, `transform.js`, `layers.js`, `text-editor.js`, `image-editor.js`, `components.js`, `styles.js`, `history.js`, `storage.js`, `migrations.js`, `export.js` e `shortcuts.js` separam suas responsabilidades. `model.mjs`, `grouping.mjs` e `sheet.mjs` preservam o modelo, agrupamento progressivo e renderização SVG já existentes.
+
+Não é uma ferramenta oficial de Ordem Paranormal. As regras e rituais são as adaptações de Catastrophe desta conversa.

@@ -1,1 +1,9 @@
-{"name":"catastrophe-editor","version":"1.0.0","private":true,"type":"module","scripts":{"check":"node --check dist/app.js && node --test tests/*.test.mjs"}}
+{
+  "name": "catastrophe-editor",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/check.mjs"
+  }
+}
