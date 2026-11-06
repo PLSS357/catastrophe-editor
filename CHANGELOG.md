@@ -1,3 +1,13 @@
+# Alterações — 0.3.2
+
+- Substituídos vínculos por posição por descritores semânticos, incluindo catálogo, forma e elemento; correspondência explícita para ambiguidades e modelos legados.
+- Templates avisam sobre partes sem equivalência e preservam os dados do destino.
+- Composições medem o conteúdo e oferecem expansão/redistribuição sem redução de fontes; altura de página acompanha prévia, histórico e exportações.
+- Exportação vetorial PDF com textos e formas selecionáveis, imagens rasterizadas individualmente e modo por imagem preservado.
+- Preferências completas da exportação persistem ao fechar/reabrir e recarregar.
+- Importação/exportação da biblioteca completa, com imagens/fontes, validação e acréscimo atômico sem substituição.
+- Nove testes adicionais e dois fluxos de interface específicos, além da verificação do PDF com extração de texto acentuado e renderização visual.
+
 # Alterações — 0.3.1
 
 - Biblioteca de 109 entradas e 274 formas de rituais, extraídas das entradas mecânicas dos dez PDFs fornecidos, com resumos e referências de página.

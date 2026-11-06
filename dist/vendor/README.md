@@ -1,0 +1,2 @@
+PDF vetorial: jsPDF 4.2.1 e svg2pdf.js 2.9.0, sob licença MIT. Bundle ESM local, carregado apenas ao exportar PDF vetorial. Não usa servidores externos nem o método HTML de jsPDF. Gerado com esbuild 0.27.0.
+Correção local: o corpo da expressão regular de Data URI usa [\s\S]* em vez de alternância repetida, evitando estouro de pilha em imagens extensas. Reproduzido por scripts/build-vector-pdf.mjs.
