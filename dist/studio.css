@@ -38,3 +38,5 @@ body.focus-mode #stageViewport{min-width:0;overflow-y:scroll;scrollbar-gutter:st
 body.focus-mode .canvas-hint{display:none}
 #stageViewport{scrollbar-gutter:stable;overflow-anchor:none}.stage-wrap{overflow-anchor:none}
 @media(max-width:600px){body.focus-mode #stageViewport{padding:20px 18px 14px}.composition-tools button,.group-toolbar button{min-height:34px}.context-menu,.context-submenu{width:230px}.context-menu button,.context-submenu button{min-height:30px}}
+
+.page-row{flex-wrap:wrap}.page-row input{flex:1 1 180px}.page-row [data-delete-page]{border:1px solid #80524a;border-radius:4px;min-height:32px;padding:5px 9px;color:#ffbcb0}.page-row [data-delete-page]:hover:not(:disabled){background:#522c25}#confirmDeletePage{background:#a64232;color:#fff4ef}#confirmDeletePage:hover{background:#c5523f}

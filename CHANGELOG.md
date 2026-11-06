@@ -1,5 +1,13 @@
 # Alterações — 0.3.2
 
+## 0.4.2 — Excluir páginas
+
+- Gerenciar páginas oferece Excluir para cada página, com confirmação e cancelamento.
+- Excluir a página atual abre uma página vizinha; excluir outra mantém a página atual. Dados compartilhados são preservados.
+- Exclusão participa de Desfazer/Refazer e do salvamento. A última página é protegida.
+- Validação: 77 testes automatizados e 36 fluxos de interface.
+
+
 ## 0.4.1 — Menus compactos e navegação estável
 
 - Menu de imagem com Máscara, Virar, Organizar, Alinhar e Estilo em submenus; abertura por clique, ponteiro ou teclado, com posicionamento dentro da janela.

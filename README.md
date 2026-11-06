@@ -93,3 +93,7 @@ O modo de foco tem uma única barra com desfazer/refazer, seletor de página, en
 O botão direito abre um menu compacto: máscaras em **Máscara**, espelhamento em **Virar**, camadas e bloqueio em **Organizar**, alinhamento/distribuição em **Alinhar** e aparência em **Estilo**. Submenus abrem ao apontar ou clicar. Setas verticais navegam, seta para a direita abre o submenu e seta para a esquerda retorna. Esc fecha primeiro o submenu, depois o menu. Telas muito baixas ainda podem precisar de rolagem para manter todas as ações acessíveis.
 
 Modelos nativos e personalizados exibem miniaturas geradas da composição com os dados do personagem atual, sem aplicar mudanças. Camadas exibem a aparência real dos blocos; grupos mostram o conjunto. As prévias têm referências SVG isoladas e não interferem na seleção ou na renderização da ficha. Títulos de seções não se repetem internamente; informações como d4 → d12, PV + PD e contadores permanecem disponíveis.
+
+## Excluir páginas — 0.4.2
+
+Em **Gerenciar páginas → Excluir**, confirme a remoção da página e de seus blocos. As outras páginas e os dados compartilhados do personagem permanecem preservados. Se a página excluída estiver aberta, o editor abre a próxima, ou a anterior quando ela for a última da lista. Use **Desfazer (Ctrl+Z)** na mesma sessão para recuperar a página, seus blocos e grupos; Refazer aplica novamente a exclusão. A ficha precisa manter pelo menos uma página, por isso a última não pode ser excluída.
