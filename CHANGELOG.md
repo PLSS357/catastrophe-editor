@@ -1,5 +1,20 @@
 # Alterações — 0.3.2
 
+## 0.4.0 — Ateliê, páginas e exportação de grupo
+
+- Ações de arquivo reunidas no cabeçalho, ferramentas de composição próximas à ficha, modo de foco e enquadramentos de página/largura/seleção.
+- Propriedades em Conteúdo, Posição, Aparência e Avançado; formulário recolhível, filtros de perícias, contraste maior, rótulos em português e salvamento com horário.
+- Camadas com clique simples exclusivo e Shift aditivo, miniaturas, hierarquia e renomeação por duplo clique.
+- Menu contextual por tipo, edição visual de imagem, máscaras, espelhamento, estilos, alinhamento e operações de seleção múltipla.
+- Até 20 páginas compartilhando os dados do personagem e o tema; troca, reordenação, renomeação e transferência de blocos, com histórico e backup completo.
+- Texto pode expandir, reduzir com fonte mínima ou continuar em novas páginas; fluxo opcional desloca conteúdo abaixo. Avisos de transbordamento ficam visíveis.
+- Biblioteca de habilidades, rituais, armas e equipamentos reutilizáveis, integrada ao backup da biblioteca.
+- Dados vinculados podem ser inseridos em qualquer página. Modelos distinguem layout de conteúdo e têm prévia; aparência pode ser copiada entre fichas.
+- Temas e versões com miniaturas; conferência organizada em conteúdo, regras e diagramação.
+- Exportação de todas as páginas e de grupos: PDF conjunto ou ZIP com imagens/SVG individuais. Predefinições de compartilhamento, A4 e JSON, além de impressão econômica com prévia.
+- Validação: 67 testes de domínio/armazenamento/exportação, 26 fluxos de interface e PDF de duas páginas com texto extraível.
+
+
 - Substituídos vínculos por posição por descritores semânticos, incluindo catálogo, forma e elemento; correspondência explícita para ambiguidades e modelos legados.
 - Templates avisam sobre partes sem equivalência e preservam os dados do destino.
 - Composições medem o conteúdo e oferecem expansão/redistribuição sem redução de fontes; altura de página acompanha prévia, histórico e exportações.
