@@ -1,3 +1,4 @@
+import {installPhotoWorkspace} from './photocraft-workspace.js';
 import {cameraPoint,restoreCamera} from './viewport.js';
 import {installStudio} from './studio.js';
 import {syncPage,ensurePages,growBlock} from './studio-model.mjs';
@@ -18,7 +19,7 @@ const ICONS={user:'M20 21v-2a7 7 0 0 0-14 0v2M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z
 const icon=n=>`<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${ICONS[n]||ICONS.layout}"/></svg>`;
 function icons(root=document){root.querySelectorAll('[data-icon]').forEach(e=>e.outerHTML=icon(e.dataset.icon));}
 icons();
-let studio;
+let studio,photoWorkspace;
 let source,docs=[],doc,db,selected=null,view='character',mode='edit',scale=.4,manualZoom=null,undo=[],redo=[],saveTimer,saveSeq=0,lastHistory=0,uploadTarget='portrait';
 let isolation=null;const loadedFonts=new Set();const imageCache={};const selection=new Set();let drag=null,toastTimer;
 const getBlock=()=>doc?.blocks.find(b=>b.id===selected);
@@ -84,7 +85,7 @@ function renderInspector(){const b=getBlock(),container=$('#inspectorContent');l
   s+=groupButtons()+`<div class="align-buttons"><button data-action="front" title="Trazer à frente">${icon('front')}</button><button data-action="back" title="Enviar para trás">${icon('back')}</button><button data-action="duplicate-block" title="Duplicar bloco">${icon('copy')}</button><button data-action="delete-block" class="danger" title="Remover bloco">${icon('trash')}</button></div><label class="toggle-row">Bloquear posição<input type="checkbox" data-block-prop="locked" ${b.locked?'checked':''}></label><label class="toggle-row">Mostrar na ficha<input type="checkbox" data-block-prop="visible" ${b.visible?'checked':''}></label>`;
  }
  s+=(tools?.properties()||'')+layersHTML();
- container.innerHTML=s;tools?.layers.enhance();studio?.inspector();if(b?.locked)container.querySelectorAll('input,textarea,select').forEach(el=>{if(!['locked','visible'].includes(el.dataset.blockProp)&&!el.classList.contains('layer-search'))el.disabled=true;});
+ container.innerHTML=s;tools?.layers.enhance();studio?.inspector();photoWorkspace?.refresh();if(b?.locked)container.querySelectorAll('input,textarea,select').forEach(el=>{if(!['locked','visible'].includes(el.dataset.blockProp)&&!el.classList.contains('layer-search'))el.disabled=true;});
 }
 function fitCanvas(){if(!doc)return;const v=$('#stageViewport');const width=v.clientWidth-(innerWidth<700?30:innerWidth>1750?110:innerWidth<1250?40:68);scale=manualZoom??Math.max(.12,Math.min(1,width/WIDTH));manualZoom=scale;const w=WIDTH*scale,h=pageHeight(doc)*scale;$('#stageWrap').style.width=w+'px';$('#stageWrap').style.height=h+'px';$('.canvas-caption').style.width=w+'px';$('#zoomValue').textContent=Math.round(scale*100)+'%';renderSelection();}
 
@@ -226,5 +227,6 @@ const editorContext={get docs(){return docs;},get doc(){return doc;},get db(){re
 const exporters=installExports(editorContext);
 const tools=installEditor(editorContext);
 studio=installStudio(editorContext);
+photoWorkspace=installPhotoWorkspace(editorContext);
 const ritualLibrary=installRitualLibrary({...editorContext,get doc(){return doc;},get source(){return source;},get mode(){return mode;},editRitual:ritualModal});
 init();
