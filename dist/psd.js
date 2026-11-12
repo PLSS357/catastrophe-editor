@@ -167,5 +167,5 @@ export async function exportPSD(svg,page,blocks,width,{onProgress}={}){
   onProgress?.(i+1,visible.length);
  }
  if(layers.length>32767)throw Error('Excesso de camadas PSD.');
- return writePSD({width,height,layers:layers.reverse(),composite});
+ return writePSD({width,height,layers,composite});
 }
