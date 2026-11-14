@@ -42,3 +42,6 @@ test('Importações com grupos inexistentes são recusadas',()=>{const d=make();
 
 
 test('Centralizar seleção no quadro move o conjunto para o centro da página',()=>{const d=blank();const a=block('text','A',100,120,200,80),b=block('text','B',400,260,100,120);d.blocks=[a,b];assert.equal(centerSelectionInFrame(d.blocks,[a.id,b.id],1920,1431),true);const box={x:Math.min(a.x,b.x),y:Math.min(a.y,b.y),w:Math.max(a.x+a.w,b.x+b.w)-Math.min(a.x,b.x),h:Math.max(a.y+a.h,b.y+b.h)-Math.min(a.y,b.y)};assert.equal(box.x,(1920-box.w)/2);assert.equal(box.y,(1431-box.h)/2);});
+
+
+test('Os quadrados de Ímpeto são brancos, inclusive os preenchidos',()=>{const d=make();let c=d.blocks.find(b=>b.type==='counter');c.title='Ímpeto';c.counterKind='impetus';c.max=3;c.value=1;const svg=sheetSVG(d,src.skills,{}, {play:true});const matches=[...svg.matchAll(/<rect[^>]*fill="#f5f3eb" stroke="#f5f3eb"[^>]*>/g)];assert.equal(matches.length,3);assert.ok(svg.includes('stroke="#11170e"'));});
