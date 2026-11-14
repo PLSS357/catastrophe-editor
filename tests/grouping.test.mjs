@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {blank,block,clone,makeCharacter,validateImport,selectionUnits,alignToReference} from '../dist/model.mjs';
+import {blank,block,clone,makeCharacter,validateImport,selectionUnits,alignToReference,centerSelectionInFrame} from '../dist/model.mjs';
 import {groupSelection,ungroupSelection,selectionFor,outerGroup,splitBlock,duplicateSelection} from '../dist/grouping.mjs';
 globalThis.document={createElement:()=>({getContext:()=>({font:'',measureText:s=>({width:String(s).length*11})})})};
 const {sheetSVG,visibleSkills}=await import('../dist/sheet.mjs');
@@ -39,3 +39,6 @@ test('Os dois marcadores de preparação são brancos e a prévia não possui co
  const d=make(),counter=d.blocks.find(b=>b.type==='counter');counter.value=1;const svg=sheetSVG(d,src.skills,{}, {play:true});assert.equal((svg.match(/fill="#f5f3eb"/g)||[]).length,2);assert.equal((svg.match(/data-counter=/g)||[]).length,0);assert.ok(svg.includes('stroke="#11170e"'));
 });
 test('Importações com grupos inexistentes são recusadas',()=>{const d=make();d.blocks[0].groupIds=['ausente'];assert.throws(()=>validateImport(d));});
+
+
+test('Centralizar seleção no quadro move o conjunto para o centro da página',()=>{const d=blank();const a=block('text','A',100,120,200,80),b=block('text','B',400,260,100,120);d.blocks=[a,b];assert.equal(centerSelectionInFrame(d.blocks,[a.id,b.id],1920,1431),true);const box={x:Math.min(a.x,b.x),y:Math.min(a.y,b.y),w:Math.max(a.x+a.w,b.x+b.w)-Math.min(a.x,b.x),h:Math.max(a.y+a.h,b.y+b.h)-Math.min(a.y,b.y)};assert.equal(box.x,(1920-box.w)/2);assert.equal(box.y,(1431-box.h)/2);});
