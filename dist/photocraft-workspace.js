@@ -1,3 +1,4 @@
+import {resizeVisualBlock} from './visual-sizing.js';
 /** PhotoCraft-inspired docked workspace. Keeps the existing document schema. */
 export function installPhotoWorkspace(E){
  const $=s=>document.querySelector(s);
@@ -40,7 +41,7 @@ export function installPhotoWorkspace(E){
   contextual.classList.toggle('has-selection',!!block);$('#photoLayersDock').classList.toggle('is-collapsed',!prefs.layers);$('#photoLayersToggle').setAttribute('aria-expanded',String(prefs.layers));
   const view=$('.photo-view-switch');const old=document.querySelector('.rail-btn[data-view].active');if(old){view.querySelectorAll('.photo-view').forEach(b=>b.classList.toggle('active',b.dataset.photoView===old.dataset.view));}
  }
- contextual.addEventListener('change',e=>{const field=e.target.closest('[data-photo-field]');if(!field)return;const b=E.getBlock();if(!b||b.locked)return;const key=field.dataset.photoField;let value=Number(field.value);if(!Number.isFinite(value))return;value=Math.max(['w','h'].includes(key)?25:-500,Math.min(4000,value));E.change(()=>{b[key]=value;},true,true);});
+ contextual.addEventListener('change',e=>{const field=e.target.closest('[data-photo-field]');if(!field)return;const b=E.getBlock();if(!b||b.locked)return;const key=field.dataset.photoField;let value=Number(field.value);if(!Number.isFinite(value))return;value=Math.max(['w','h'].includes(key)?25:-500,Math.min(4000,value));E.change(()=>{if(key==='w')resizeVisualBlock(b,value,b.lockRatio?b.h*value/b.w:b.h);else if(key==='h')resizeVisualBlock(b,b.lockRatio?b.w*value/b.h:b.w,value);else b[key]=value;},true,true);});
  contextual.addEventListener('click',e=>{const button=e.target.closest('[data-photo-direct]');if(button)editorCommand(button.dataset.photoDirect);});
  document.addEventListener('photo-workspace-command',e=>{const action=e.detail,el=document.createElement('button');el.dataset.action=action;el.hidden=true;document.body.append(el);el.click();el.remove();});
  rail.addEventListener('click',e=>{const b=e.target.closest('[data-photo-tool]');if(!b)return;const type=b.dataset.photoTool;

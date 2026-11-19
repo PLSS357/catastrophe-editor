@@ -159,9 +159,9 @@ export async function exportPSD(svg,page,blocks,width,{onProgress}={}){
    const layerLeft=left,layerTop=top; // Raster preview keeps exact SVG positioning and effects.
    const pixels=await drawSVG(isolateNode(svg,b.id,part.indices),right-left,bottom-top,left,top,scale);
    // A Type Tool transform's translation is at the text baseline; font size is in PSD pixels.
-   const angle=(Number(b.rotation)||0)*Math.PI/180;
+   const unitX=transformedPoint(node,px+1,py),unitY=transformedPoint(node,px,py+1);
    const tx=origin.x*scale,ty=origin.y*scale;
-   const text={...t,fontSize,width:estimated,height:fontSize*1.5,matrix:[Math.cos(angle),Math.sin(angle),-Math.sin(angle),Math.cos(angle),tx,ty]};
+   const text={...t,fontSize,width:estimated,height:fontSize*1.5,matrix:[unitX.x-origin.x,unitX.y-origin.y,unitY.x-origin.x,unitY.y-origin.y,tx,ty]};
    layers.push({name:`Texto · ${t.text.slice(0,60)}`,left:layerLeft,top:layerTop,width:right-left,height:bottom-top,pixels,text});
   }
   onProgress?.(i+1,visible.length);

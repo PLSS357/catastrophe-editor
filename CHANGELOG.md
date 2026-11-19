@@ -1,5 +1,12 @@
 # Alterações — 0.3.2
 
+## 0.4.3 — Rituais uniformes e tamanho visual
+
+- Rituais com altura por conteúdo, espaçamento constante e fontes uniformes, sem modificar efeitos.
+- Alças e campos L/A escalam todos os 22 tipos de bloco, incluindo seus elementos internos. Controles independentes para faixas, dados, marcadores, separadores e moldura.
+- Escala preservada ao separar componentes, salvar, importar e exportar, inclusive nas transformações do texto editável PSD.
+- Validação: 91 testes automatizados e sete fluxos de interface no navegador.
+
 ## 0.4.2 — Excluir páginas
 
 - Gerenciar páginas oferece Excluir para cada página, com confirmação e cancelamento.

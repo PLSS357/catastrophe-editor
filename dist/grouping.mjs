@@ -1,3 +1,4 @@
+import {splitVisualContent} from './visual-sizing.js';
 import {uid,clone,block,PROFILES,selectionUnits} from './model.mjs';
 
 export const outerGroup=b=>(b.groupIds||[]).at(-1);
@@ -13,7 +14,8 @@ export function canSplit(b){if(!b)return false;if(['attributes','skills'].includ
 export function canUngroup(doc,ids){return doc.blocks.some(b=>ids.includes(b.id)&&(outerGroup(b)||canSplit(b)));}
 function cleanGroups(doc){const used=new Set(doc.blocks.flatMap(b=>b.groupIds||[]));doc.groups=(doc.groups||[]).filter(g=>used.has(g.id));}
 function headingOf(original,title,w,x=original.x,y=original.y,font=29,extra={}){return block('heading',title,x,y,w,41,{font,color:original.color,opacity:original.opacity,locked:original.locked,headingText:title,...extra});}
-export function splitBlock(doc,id,{getSkillRows=()=>[]}={}){
+export function splitBlock(doc,id,options={}){return splitVisualContent(doc,id,()=>splitBlockBase(doc,id,options));}
+function splitBlockBase(doc,id,{getSkillRows=()=>[]}={}){
  const original=doc.blocks.find(b=>b.id===id);if(!canSplit(original))return [id];
  const body=clone(original);body.preset=false;body.part='content';let parts;
  if(original.type==='attributes'){
@@ -37,7 +39,7 @@ export function splitBlock(doc,id,{getSkillRows=()=>[]}={}){
   const size=Math.min(24,original.h-5),count=Math.max(1,Math.min(30,original.max||3)),width=count*(size+7),left=original.w-width;
   if(left<30)return [id];body.x+=left;body.w=width;parts=[body,headingOf(original,original.title,left-5,original.x,original.y,original.font,{headingStyle:'plain',h:original.h})];
  }
- if(!parts?.length)return [id];for(const part of parts){if(original.textStyle&&!part.textStyle)part.textStyle=clone(original.textStyle);if(original.titleStyle&&!part.titleStyle)part.titleStyle=clone(original.titleStyle);if(original.rotation){const angle=original.rotation*Math.PI/180,cx=original.x+original.w/2,cy=original.y+original.h/2,x=part.x+part.w/2-cx,y=part.y+part.h/2-cy;part.x=cx+x*Math.cos(angle)-y*Math.sin(angle)-part.w/2;part.y=cy+x*Math.sin(angle)+y*Math.cos(angle)-part.h/2;part.rotation=original.rotation;}}const index=doc.blocks.indexOf(original);doc.blocks.splice(index,1,...parts);return parts.map(b=>b.id);
+ if(!parts?.length)return [id];for(const part of parts){if(original.visualStyle&&!part.visualStyle)part.visualStyle=clone(original.visualStyle);if(original.textStyle&&!part.textStyle)part.textStyle=clone(original.textStyle);if(original.titleStyle&&!part.titleStyle)part.titleStyle=clone(original.titleStyle);if(original.rotation){const angle=original.rotation*Math.PI/180,cx=original.x+original.w/2,cy=original.y+original.h/2,x=part.x+part.w/2-cx,y=part.y+part.h/2-cy;part.x=cx+x*Math.cos(angle)-y*Math.sin(angle)-part.w/2;part.y=cy+x*Math.sin(angle)+y*Math.cos(angle)-part.h/2;part.rotation=original.rotation;}}const index=doc.blocks.indexOf(original);doc.blocks.splice(index,1,...parts);return parts.map(b=>b.id);
 }
 export function ungroupSelection(doc,ids,options){
  const groups=new Set(doc.blocks.filter(b=>ids.includes(b.id)).map(outerGroup).filter(Boolean));

@@ -1,5 +1,5 @@
 import {clone,COLORS} from './model.mjs';
-export const STYLE_KEYS=['textStyle','titleStyle','color','textColor','opacity','frameStyle','dieStyle','resourceStyle','mask','softness','fade','imageAdjust'];
+export const STYLE_KEYS=['visualStyle','textStyle','titleStyle','color','textColor','opacity','frameStyle','dieStyle','resourceStyle','mask','softness','fade','imageAdjust'];
 export function copyStyle(block){return Object.fromEntries(STYLE_KEYS.filter(k=>block[k]!==undefined).map(k=>[k,clone(block[k])]));}
 export function pasteStyle(block,style){for(const key of STYLE_KEYS)if(style[key]!==undefined)block[key]=clone(style[key]);}
 export function resetStyle(block){for(const k of STYLE_KEYS)delete block[k];}

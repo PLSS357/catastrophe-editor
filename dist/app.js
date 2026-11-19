@@ -1,3 +1,4 @@
+import {resizeVisualBlock} from './visual-sizing.js';
 import {installPhotoWorkspace} from './photocraft-workspace.js';
 import {cameraPoint,restoreCamera} from './viewport.js';
 import {installStudio} from './studio.js';
@@ -169,7 +170,7 @@ document.addEventListener('input',e=>{const el=e.target;if(!doc||mode!=='edit')r
  if(el.dataset.attr){change(()=>doc.attrs[el.dataset.attr]=+el.value);return;}
  if(el.dataset.skill){change(()=>doc.skills[el.dataset.skill]=+el.value);el.closest('.skill-row')?.classList.toggle('trained',+el.value>4);return;}
  if(el.dataset.skillVisible){const b=getBlock();if(b)change(()=>{b.hiddenSkills=(b.hiddenSkills||[]).filter(k=>k!==el.dataset.skillVisible);if(!el.checked)b.hiddenSkills.push(el.dataset.skillVisible);});return;}
- if(el.dataset.blockProp){const b=getBlock();if(!b)return;const key=el.dataset.blockProp;if(b.locked&&!['locked','visible'].includes(key))return;change(()=>{let value=el.type==='checkbox'?el.checked:el.value;if(['x','y'].includes(key))value=clamp(value,-500,4000);if(['w','h'].includes(key))value=clamp(value,25,4000);if(key==='font')value=clamp(value,12,180);if(key==='opacity')value=clamp(value,.1,1);if(key==='max')value=clamp(value,1,30);if(key==='value')value=clamp(value,0,b.max||30);if(b.lockRatio&&key==='w')b.h=Math.max(25,b.h*value/b.w);if(b.lockRatio&&key==='h')b.w=Math.max(25,b.w*value/b.h);b[key]=value;if(key==='headingText')b.title=value;if(key==='skillKey'){const row=source.skills.find(r=>r[0]===value);if(row){b.skillLabel=row[1];b.skillAttr=row[2];b.title=row[1];}}});return;}
+ if(el.dataset.blockProp){const b=getBlock();if(!b)return;const key=el.dataset.blockProp;if(b.locked&&!['locked','visible'].includes(key))return;change(()=>{let value=el.type==='checkbox'?el.checked:el.value;if(['x','y'].includes(key))value=clamp(value,-500,4000);if(['w','h'].includes(key))value=clamp(value,25,4000);if(key==='font')value=clamp(value,12,180);if(key==='opacity')value=clamp(value,.1,1);if(key==='max')value=clamp(value,1,30);if(key==='value')value=clamp(value,0,b.max||30);if(key==='w')resizeVisualBlock(b,value,b.lockRatio?b.h*value/b.w:b.h);else if(key==='h')resizeVisualBlock(b,b.lockRatio?b.w*value/b.h:b.w,value);else b[key]=value;if(key==='headingText')b.title=value;if(key==='skillKey'){const row=source.skills.find(r=>r[0]===value);if(row){b.skillLabel=row[1];b.skillAttr=row[2];b.title=row[1];}}});return;}
  if(el.dataset.abilityField){const a=doc.abilities.find(a=>a.id===el.dataset.id);change(()=>{a[el.dataset.abilityField]=el.value;if(el.dataset.abilityField==='title'){const b=doc.blocks.find(b=>b.ref===a.id);if(b)b.title=el.value;}});return;}
  if(el.dataset.ritualField){const r=doc.rituals.find(r=>r.id===el.dataset.id);change(()=>r[el.dataset.ritualField]=el.value);return;}
 });
