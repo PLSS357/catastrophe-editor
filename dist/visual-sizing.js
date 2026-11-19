@@ -1,4 +1,4 @@
-export function visualGeometry(b){const w=b.resizeMode!=='reflow'&&Number(b.renderWidth)>0?b.renderWidth:b.w,h=b.resizeMode!=='reflow'&&Number(b.renderHeight)>0?b.renderHeight:b.h;return {w,h,sx:b.w/w,sy:b.h/h};}
+export function visualGeometry(b){const baseW=b.resizeMode!=='reflow'&&Number(b.renderWidth)>0?b.renderWidth:b.w,baseH=b.resizeMode!=='reflow'&&Number(b.renderHeight)>0?b.renderHeight:b.h,scale=Math.min(b.w/baseW,b.h/baseH);return {w:b.w/scale,h:b.h/scale,sx:scale,sy:scale};}
 export function resizeVisualBlock(b,w,h){if(b.locked)return b;w=Math.max(25,Math.min(4000,Number(w)||b.w));h=Math.max(25,Math.min(4000,Number(h)||b.h));if(b.resizeMode!=='reflow'&&(w!==b.w||h!==b.h)){b.renderWidth??=b.w;b.renderHeight??=b.h;}b.w=w;b.h=h;return b;}
 export function resetVisualGeometry(b){delete b.renderWidth;delete b.renderHeight;}
 export function expandVisualHeight(b,height){const g=visualGeometry(b);if(b.renderHeight!==undefined)b.renderHeight=height/g.sy;b.h=height;return b;}

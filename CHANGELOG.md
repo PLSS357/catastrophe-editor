@@ -1,5 +1,12 @@
 # Alterações — 0.3.2
 
+## 0.4.4 — Letras proporcionais e nomes de rituais
+
+- Escala uniforme preserva a forma das letras ao mudar apenas largura ou altura; fichas salvas com escala desigual também são renderizadas sem deformação.
+- Corrigida a sobrescrita de estilo que ampliava apenas o primeiro nome em listas de rituais sem cabeçalho.
+- Aparência → Nomes dos rituais oferece tamanho individual por nome, com herança do tamanho comum e salvamento na ficha.
+- Validação: 93 testes automatizados e conferência no navegador de escala uniforme e edição independente dos nomes.
+
 ## 0.4.3 — Rituais uniformes e tamanho visual
 
 - Rituais com altura por conteúdo, espaçamento constante e fontes uniformes, sem modificar efeitos.
